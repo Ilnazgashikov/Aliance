@@ -11,11 +11,14 @@ body {
     color: #fff;
     height: 94px;
 }
+.logo-link {
+    padding-left: 20px;
+}
 .header-nav {
     display: flex;
     flex-basis: 100%;
     list-style: none;
-    padding: 0 50px;
+    padding: 0 20px;
     gap:30px;
     margin:0;
 }
@@ -37,6 +40,7 @@ body {
 }
 .header-phone-link {
     text-decoration: none;
+    color: inherit;
 }
 .button {
     font-size: 14px;
