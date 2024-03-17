@@ -40,9 +40,16 @@ body {
     position: fixed;
     z-index: 2;
     width: 100%;
+    left: 0;
+    top: 0;
+    transition: 0.2s background-color;
+}
+.nav-bar-light {
+    background-color: #fff;
+    color: rgb(41, 45, 51);
 }
 .logo-link {
-    padding: 20px 50px;
+    padding: 25px 50px;
     display: flex;
     justify-content: center;
     border-right: 1px solid rgba(235, 235, 240, 0.2);
