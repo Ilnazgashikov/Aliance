@@ -39,7 +39,7 @@ body {
     position: relative;
 }
 .logo-link {
-    padding: 20px 20px;
+    padding: 20px 50px;
     display: flex;
     justify-content: center;
     border-right: 1px solid rgba(235, 235, 240, 0.2);
@@ -49,17 +49,17 @@ body {
     display: flex;
     flex-basis: 100%;
     list-style: none;
-    padding: 0 20px;
-    gap:30px;
+    padding: 0 50px;
     margin:0;
 }
 .header-nav-item {
     display: flex;
     flex-shrink: 0;
+    margin-right: 50px;
 }
 .header-nav-link {
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
     color: inherit;
 }
 .header-phone {
@@ -67,21 +67,20 @@ body {
     display: flex;
     align-items: center;
     gap:10px;
-    margin-right: 20px;
+    margin-right: 50px;
 }
 .header-phone-link {
     text-decoration: none;
     color: inherit;
 }
 .button {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     line-height: 160%;
     color: #fff;
     padding: 25px 60px;
     background: rgb(92, 142, 230);
     border: none;
-    height: 100%;
     cursor: pointer;
 }
 .header-button {
@@ -90,11 +89,11 @@ body {
     height: 100%;
 }
 .container{
-    max-width:1140px;
+    max-width:1440px;
     margin: auto;
 }
 .header-content {
-    padding-top: 60px;
+    padding-top: 150px;
     position: relative;
     z-index: 1;
     color: #fff;
@@ -105,9 +104,9 @@ body {
     height: 2px;
 }
 .header-title {
-    max-width:800px;
+    max-width:1080px;
     font-family: "Bebas Neue", sans-serif;
-    font-size: 50px;
+    font-size: 80px;
     line-height: 120%;
     margin:30px 0;
 }
@@ -116,25 +115,26 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: 160%;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 .header-features{
     display: flex;
     padding: 0;
-    min-height: 170px;
-    margin-top: 45px;
+    min-height: 168px;
+    margin-top: 100px;
     list-style: none;
     color: #fff;
     position: relative;
+}
+.header-features-item {
+    min-width: 287px;
+    padding: 30px 50px;
+    border: 1px solid rgba(235, 235, 240, 0.2);
 }
 .header-features-text {
     font-size: 16px;
     font-weight: 400;
     line-height: 160%;
-}
-.header-features-item {
-    padding: 30px 30px;
-    border: 1px solid rgba(235, 235, 240, 0.2);
 }
 .header-features-item:not(:last-child){
     border-right: none;
