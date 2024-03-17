@@ -47,6 +47,7 @@ body {
 .nav-bar-light {
     background-color: #fff;
     color: rgb(41, 45, 51);
+    border-bottom: none;
 }
 .logo-link {
     padding: 25px 50px;
