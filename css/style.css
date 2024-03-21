@@ -18,7 +18,7 @@ body {
     background-image: url(../img/bg.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center bottom -40px;
     position: relative;
 }
 .header-bg::before {
@@ -26,7 +26,7 @@ body {
     top: 0;
     left: 0;
     position: absolute;
-    background: rgba(41, 45, 51, 0.6);
+    background: rgba(41, 45, 51, 0.75);
     height: 100%;
     width: 100%;
     z-index: 0;
@@ -37,7 +37,7 @@ body {
     align-items: center;
     color: #fff;
     height: 94px;
-    position: fixed;
+    position: fixed;    
     z-index: 2;
     width: 100%;
     left: 0;
@@ -89,7 +89,7 @@ body {
     font-weight: 600;
     line-height: 160%;
     color: #fff;
-    padding: 25px 60px;
+    padding: 25px 45px;
     background: rgb(92, 142, 230);
     border: none;
     cursor: pointer;
@@ -97,7 +97,6 @@ body {
 .header-button {
     height: 100%;
     flex-shrink: 0;
-    height: 100%;
 }
 .container{
     max-width:1440px;
@@ -109,17 +108,23 @@ body {
     z-index: 1;
     color: #fff;
 } 
+.content-button {
+    padding: 26px 60px;
+}
 .separator {
     background: rgb(92, 142, 230);
     width: 150px;
     height: 2px;
 }
-.header-title {
+.header-title { 
     margin: 30px 0;
     max-width:1080px;
+    font-weight: 600;
     font-family: "Bebas Neue", sans-serif;
     font-size: 80px;
     line-height: 120%;
+    letter-spacing: 1.8px;
+    word-spacing: -1.6px;
 }
 .header-text {
     max-width: 720px;
@@ -138,14 +143,16 @@ body {
     position: relative;
 }
 .header-features-item {
-    max-width: 287px;
-    padding: 30px 50px;
+    width: 288px;
+    padding: 35px 60px;
     border: 1px solid rgba(235, 235, 240, 0.2);
 }
 .header-features-text {
     font-size: 16px;
     font-weight: 400;
     line-height: 160%;
+    margin-bottom: 0;
+    margin-top: 18px;
 }
 .header-features-item:not(:last-child){
     border-right: none;
@@ -158,14 +165,14 @@ body {
 .section-title {
     font-family: "Bebas Neue", sans-serif;
     font-size: 60px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 120%;
     color: rgb(41, 45, 51);
-    margin-top: 30px;
+    margin-top: 20px;
 }
 .steps {
     display: flex;
-    list-style: none;
+    list-style: none;   
     gap: 30px;
     padding: 0;
 }
@@ -175,7 +182,7 @@ body {
 .steps-num{
     font-family: "Bebas Neue", sans-serif;
     font-size: 48px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 120%;
     color: rgb(92, 142, 230);
     display: flex;
@@ -202,8 +209,8 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: 160%;
-    margin-bottom: 20px;
-    margin-top: 10px;
+    margin-bottom: 18px;
+    margin-top:18px;
 }
 .steps-link:before {
     content: "";
@@ -211,7 +218,7 @@ body {
     height: 1px;
     background: rgb(92, 142, 230);
     margin-right: 20px;
-}
+}   
 .steps-link {
     color: rgb(92, 142, 230);
     font-size: 16px;
