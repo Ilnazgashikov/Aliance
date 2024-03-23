@@ -12,9 +12,69 @@
     <title>Aliance</title>
 </head>
 <body>
+    <div class="mobile-menu">
+        <ul class="mobile-menu-nav">
+            <li class="mobile-nav-item"><a href="" class="mobile-nav-link">О компании</a></li>
+            <li class="mobile-nav-item"><a href="" class="mobile-nav-link">Контрактное производтсво</a>
+                <ul class="mobile-submenu">
+                    <li class="mobile-submenu-item">
+                        <a class="mobile-submenu-link" href="#">Автомобильная химия</a>
+                    </li>
+                    <li class="mobile-submenu-item">
+                        <a class="mobile-submenu-link" href="#">Бытовая химия</a>
+                    </li>
+                    <li class="mobile-submenu-item">
+                        <a class="mobile-submenu-link" href="#">Дезинцифирующие средства</a>
+                    </li>
+                    <li class="mobile-submenu-item">
+                        <a class="mobile-submenu-link" href="#">Пищевые аэрозоли</a>
+                    </li>
+                    <li class="mobile-submenu-item">
+                        <a class="mobile-submenu-link" href="#">Косметическая продукция</a>
+                    </li>
+                    <li class="mobile-submenu-item">
+                        <a class="mobile-submenu-link" href="#">Краски аэрозольные</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="mobile-nav-item"><a href="" class="mobile-nav-link">Собственные торговые марки</a></li>
+            <li class="mobile-nav-item"><a href="" class="mobile-nav-link">Новости</a></li>
+            <li class="mobile-nav-item"><a href="" class="mobile-nav-link">Контакты</a></li>
+        </ul> 
+        <a href="tel:+74996861014" class="mobile-phone">+7 (499) 686-10-14
+        </a>
+        <div class="mobile-info">
+            <svg class="header-phone-icon" width="12" height="17">
+                <use href="img/sprites.svg#adress"></use>
+            </svg>
+            <adress class="mobile-info-adress">г. Мосвка, Холодильный пер. 4к1с8</adress>
+        </div>
+        <div class="mobile-info">
+            <svg class="header-phone-icon" width="16" height="12">
+                <use href="img/sprites.svg#mail"></use>
+            </svg>
+            <a href="mailto:a.dragunov@tdaliance.ru" class="mobile-email">a.dragunov@tdaliance.ru</a>
+        </div>
+
+        <div class="social-network-link">
+            <svg class="header-phone-icon" width="24" height="24">
+                <use href="img/sprites.svg#vk"></use>
+            </svg>
+            <svg class="header-phone-icon" width="24" height="24">
+                <use href="img/sprites.svg#inst"></use>
+            </svg>
+        </div>
+    </div>
     <nav class="nav-bar">
+        <a href="" class="mobile-menu-toggle">
+            <div class="mobile-menu-line"></div>
+            <div class="mobile-menu-line"></div>
+            <div class="mobile-menu-line"></div>
+        </a>
         <a href="./" class="logo-link ">
-            <img id="logo-image" src="img/logo.svg" alt="">
+            <svg class="logo-image" width="140" height="40">
+                <use href="img/sprites.svg#logo"></use>
+            </svg>
         </a>
             <ul class="header-nav">
                 <li class="header-nav-item"><a href="" class="header-nav-link">О компании</a></li>
@@ -24,11 +84,16 @@
                 <li class="header-nav-item"><a href="" class="header-nav-link">Контакты</a></li>
             </ul> 
             <div class="header-phone">
-                <img src="img/phone.svg" alt="icon:phone">
+                <svg class="header-phone-icon" width="24" height="24">
+                    <use href="img/sprites.svg#phone"></use>
+                </svg>
                 <a href="tel:+74996861014" class="header-phone-link">+7 (499) 686-10-14</a>
             </div>
             <button class="header-button button">
-                Получить консультацию
+                <svg class="button-icon" width="24" height="24">
+                    <use href="img/sprites.svg#phone"></use>
+                </svg>
+                <span class="button-text">Получить консультацию</span>
             </button>
     </nav>
     <header class="header header-bg">
@@ -41,23 +106,33 @@
             </div>
             <ul class="header-features">
                 <li class="header-features-item">
-                    <img src="img/features/hourglass.svg" alt="" class="header-features-icon">
+                    <svg class="header-features-icon" width="36" height="36">
+                        <use href="img/sprites.svg#hourglass"></use> 
+                    </svg>
                     <p class="header-features-text">Непрерывная работа c 2017 года</p>
                 </li>
                 <li class="header-features-item">
-                    <img src="img/features/sertificate.svg" alt="" class="header-features-icon">
+                    <svg class="header-features-icon" width="36" height="36">
+                        <use href="img/sprites.svg#sertificate"></use> 
+                    </svg>
                     <p class="header-features-text">Вся продукция сертифицирована</p>
                 </li>
                 <li class="header-features-item">
-                    <img src="img/features/person.svg" alt="" class="header-features-icon">
+                    <svg class="header-features-icon" width="36" height="36">
+                        <use href="img/sprites.svg#person"></use> 
+                    </svg>
                     <p class="header-features-text">Контроль качества на всех этапах</p>
                 </li>
                 <li class="header-features-item">
-                    <img src="img/features/truck.svg" alt="" class="header-features-icon">
+                    <svg class="header-features-icon" width="36" height="36">
+                        <use href="img/sprites.svg#truck"></use> 
+                    </svg>
                     <p class="header-features-text">Возможны поставки по всей России</p>
                 </li>
                 <li class="header-features-item">
-                    <img src="img/features/speed.svg" alt="" class="header-features-icon">
+                    <svg class="header-features-icon" width="36" height="36">
+                        <use href="img/sprites.svg#speed"></use>
+                    </svg>
                     <p class="header-features-text">Оперативное производство</p>
                 </li>
             </ul>
@@ -85,7 +160,7 @@
                     <p class="steps-text">А также стремящиеся вытеснить традиционное производство, нанотехнологии функционально разнесены на независимые элементы.</p>
                 </li>
                 <li class="steps-item">
-                    <span class="steps-num">03</span>
+                    <span class="steps-num">04</span>
                     <h3 class="steps-title">Доставка</h3>
                     <p class="steps-text">В частности, экономическая повестка сегодняшнего дня говорит о возможностях приоритизации разума над эмоциями.</p>
                 </li>

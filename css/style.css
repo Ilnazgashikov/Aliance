@@ -13,8 +13,10 @@ html {
 body {
     font-family: "Noto Sans", sans-serif;
 }
+.mobile-menu {
+    display: none;
+}
 .header {
-    padding-top: 5.875rem;
     min-height: 100vh;
 }
 
@@ -46,23 +48,20 @@ body {
     width: 100%;
     left: 0;
     top: 0;
-    transition: 0.2s background-color;
+    transition: 0.2s background-color, 0.2s height;
 }
 .nav-bar-light {
     background-color: #fff;
     color: rgb(41, 45, 51);
     border-bottom: none;
+    height: 4.5rem;
 }
 .logo-link {
-    padding: 1.5625rem 3.125rem;
+    padding: 0 3.125rem;
     display: flex;
-    justify-content: center;
+    align-items: center;
     border-right: 1px solid rgba(235, 235, 240, 0.2);
     height: 100%;
-}
-.logo-image {
-    width: 8.75rem;
-    height: 2.75rem;
 }
 .header-nav {
     display: flex;
@@ -93,6 +92,9 @@ body {
     text-decoration: none;
     color: inherit;
 }
+.header-phone-icon {
+    fill: rgb(92, 142, 230);
+}
 .button {
     font-size: 1rem;
     font-weight: 600;
@@ -112,7 +114,7 @@ body {
     margin: auto;
 }
 .header-content {
-    padding-top: 9.375rem;
+    padding-top: 15.25rem;
     position: relative;
     z-index: 1;
     color: #fff;
@@ -152,7 +154,7 @@ body {
     position: relative;
 }
 .header-features-item {
-    max-width: 18rem;
+    width: 18rem;
     padding: 2.1875rem 3.75rem;
     border: 1px solid rgba(235, 235, 240, 0.2);
 }
@@ -186,7 +188,7 @@ body {
     padding: 0;
 }
 .steps-item {
-    max-width: 20.625rem;
+    width: 20.625rem;
 }
 .steps-num{
     font-family: "Bebas Neue", sans-serif;
@@ -237,6 +239,9 @@ body {
     display: flex;
     align-items: center;
 }
+.button-icon {
+    display: none;
+}
 @media (max-width: 1700px) {
     html {
         font-size: 14px;
@@ -278,5 +283,126 @@ body {
     }
     .logo-link {
         padding: 1.5rem;
+    }
+    .header-features-item {
+        padding: 1.5rem 3rem;
+    }
+}
+@media (max-width: 992px) {
+    .container {
+        max-width: 60rem;
+    }
+    html {
+        font-size: 12px;
+    }
+    .header-nav {
+        display: none;
+    }
+    .logo-link {
+        flex-grow: 1;
+        justify-content: center;
+    }
+
+    .mobile-menu-toggle {
+        width: 80px;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 1.8rem;
+        border-right: 1px solid rgba(235, 235, 240, 0.2);
+    }
+    .nav-bar-light .mobile-menu-line {
+        background-color: rgb(41, 45, 51);
+    }
+    .mobile-menu-line {
+        height: 2px;
+        background-color: #fff;
+        width: 100%;
+    }
+    .mobile-menu-line:nth-child(2) {
+        width: 80%;
+    }
+    .nav-bar .button-text {
+        display: none;
+    }
+    .button-icon {
+        display: block;
+        fill: #fff;
+    }
+    .mobile-menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
+        z-index: 2;
+        background-color:#fff;
+        padding-top: 5rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+
+    }
+    .mobile-menu-nav {
+        list-style: none;
+        padding: 0;
+    }
+    .mobile-nav-item {
+        margin-bottom: 2rem ;
+    }
+    .mobile-nav-link {
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 160%;
+        color: rgb(41, 45, 51);
+
+    }
+    .mobile-menu.is-open {
+        display: block;
+    }
+    .mobile-submenu {
+        list-style: none;
+        padding: 0;
+        padding-left: 1rem;
+        margin-top: 1rem;
+    }
+    .mobile-submenu-link {
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 160%;
+        color: rgb(130, 138, 153);
+    }
+    .mobile-phone {
+        display: block;
+        text-decoration: underline;
+        padding-top: 2rem;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 160%;
+        color: rgb(41, 45, 51);
+        border-top: 1px solid rgb(235, 235, 240);
+    }
+    .mobile-info {
+        margin-top: 1.5rem;
+        display: flex;
+        align-items:center;
+        gap: 1rem;
+    }
+    .mobile-email ,  .mobile-info-adress{
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 160%;
+        color: rgb(41, 45, 51);
+    }
+    .social-network-link {
+        display: flex;
+        gap: 0.9rem;
+        margin-top: 1.25rem;
     }
 }
