@@ -17,7 +17,7 @@ body {
     display: none;
 }
 .header {
-    min-height: 100vh;
+    padding-top: 5.8rem;
 }
 
 .header-bg {
@@ -81,6 +81,7 @@ body {
     font-size: 1rem;
     color: inherit;
 }
+
 .header-phone {
     flex-shrink: 0;
     display: flex;
@@ -114,7 +115,7 @@ body {
     margin: auto;
 }
 .header-content {
-    padding-top: 15.25rem;
+    padding-top: 9.375rem;
     position: relative;
     z-index: 1;
     color: #fff;
@@ -144,7 +145,7 @@ body {
     line-height: 160%;
     margin-bottom: 3.125rem;
 }
-.header-features{
+.header-features {
     display: flex;
     padding: 0;
     min-height: 10.5rem;
@@ -153,9 +154,23 @@ body {
     color: #fff;
     position: relative;
 }
+.slider-buttons {
+    display: none;
+    height: 44px;
+}
+.slider-button-next, .slider-button-prev {
+    height: 100%;
+    flex-basis: 50%;
+    border: 1px solid rgba(235, 235, 240, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
 .header-features-item {
     width: 18rem;
-    padding: 2.1875rem 3.75rem;
+    height: auto !important;
+    padding: 1.5rem 3rem;
     border: 1px solid rgba(235, 235, 240, 0.2);
 }
 .header-features-text {
@@ -165,10 +180,6 @@ body {
     margin-bottom: 0;
     margin-top: 1.125rem;
 }
-.header-features-item:not(:last-child){
-    border-right: none;
-}
-
 .section-light {
     margin-top: 9.375rem;
     margin-bottom: 9.375rem;
@@ -284,16 +295,16 @@ body {
     .logo-link {
         padding: 1.5rem;
     }
-    .header-features-item {
-        padding: 1.5rem 3rem;
+    .slider-buttons {
+        display: flex;
     }
 }
 @media (max-width: 992px) {
-    .container {
-        max-width: 60rem;
-    }
     html {
         font-size: 12px;
+    }
+    .container {
+        max-width: 65rem;
     }
     .header-nav {
         display: none;
@@ -319,6 +330,7 @@ body {
         height: 2px;
         background-color: #fff;
         width: 100%;
+        transition: transform 0.2s;
     }
     .mobile-menu-line:nth-child(2) {
         width: 80%;
@@ -404,5 +416,36 @@ body {
         display: flex;
         gap: 0.9rem;
         margin-top: 1.25rem;
+    }
+    .close-menu .mobile-menu-line:nth-child(2) {
+        display: none;
+    }
+    .close-menu .mobile-menu-line:nth-child(1) {
+        transform: rotate(45deg)  translateY(9px);
+    }
+    .close-menu .mobile-menu-line:nth-child(3) {
+        transform: rotate(-45deg) translateY(-9px);
+    }
+    @media (max-width: 768px) {
+        .container {
+            max-width: 40rem;
+        }
+        .header-title {
+            font-size: 4rem;
+        }
+        .steps-title {
+            font-size: 2rem;
+        }
+        .header-content {
+            padding-top: 4rem;
+        }
+    }
+    @media (max-width: 576px) {
+        .container {
+            max-width: 90%;;
+        }
+        .header-title {
+            font-size: 2.5rem;
+        }
     }
 }
