@@ -2,7 +2,7 @@ const navbar = document.querySelector(".nav-bar");
 const logo = document.querySelector(".logo-image use");
 const menuToggle = document.querySelector(".mobile-menu-toggle");
 const menu = document.querySelector(".mobile-menu");
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.features-sliders', {
     speed: 400,
     autoHeight: false,
     slidesPerView: 1,
@@ -11,16 +11,12 @@ const swiper = new Swiper('.swiper', {
         prevEl: '.slider-button-prev',
     },
     breakpoints: {
-        // when window width is >= 320px
         576: {
           slidesPerView: 2,
-
         },
-        // when window width is >= 480px
         768: {
           slidesPerView: 3,
         },
-        // when window width is >= 640px
         1024: {
           slidesPerView: 4,
         },
@@ -29,6 +25,32 @@ const swiper = new Swiper('.swiper', {
           },
     }
   });
+
+  const swiperSteps = new Swiper('.steps-slider', {
+    speed: 400,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: '.steps-button-next',
+      prevEl: '.steps-button-prev',
+    },
+    breakpoints: {
+      480: {
+        slidesPerView: 1,
+      },
+      576: {
+        slidesPerView: 2,
+      },
+      850: {
+        slidesPerView: 3,
+      },
+      992: {
+        slidesPerView: 4,
+      },
+    }
+});
+
+
 const lightMod = (event) => {
     navbar.classList.add("nav-bar-light");
     logo.href.baseVal = "img/sprites.svg#logo-black";
