@@ -22,7 +22,7 @@ body {
 
 .header-bg {
     background-image: url(../img/bg.png);
-    background-size: cover;
+    background-size: cover; 
     background-repeat: no-repeat;
     background-position: center bottom;
     position: relative;
@@ -68,18 +68,41 @@ body {
     flex-basis: 100%;
     list-style: none;
     padding: 0;
-    padding: 3.125rem;
+    padding-left: 3.125rem;
+    height: 100%;
+    align-items: center;
     margin:0;
 }
-.header-nav-item:not(:last-child) {
+.header-nav-item {
     display: flex;
+    height: 100%;
     flex-shrink: 0;
+    align-items:center;
+}
+.header-nav-item:not(:last-child) {
     margin-right: 4%;
 }
+.header-nav-link::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: -1px;
+    background-color:#5c8ee6;
+    transform: scaleX(0);
+    transition: transform 0.2s;
+}
+.header-nav-link:hover::after {
+    transform: scaleX(1);
+}
 .header-nav-link {
+    display: flex;
+    align-items:center;
+    height: 100%;
     text-decoration: none;
     font-size: 1rem;
     color: inherit;
+    position: relative;
 }
 
 .header-phone {
@@ -253,8 +276,12 @@ body {
     width: 2.5rem;
     height: 1px;
     background: rgb(92, 142, 230);
-    margin-right: 1.25rem;
+    margin-right: 1rem;
+    transition: width 0.2s;
 }   
+.steps-link:hover:before {
+    width: 3.75rem;
+}
 .steps-link {
     color: rgb(92, 142, 230);
     font-size: 1rem;
@@ -266,6 +293,50 @@ body {
 }
 .button-icon {
     display: none;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+    text-decoration: none;
+    flex-basis: 33%;
+    border: 1px solid rgb(235, 235, 240);
+    position: relative;
+    transition: border 0.2s;
+}
+.card-image {
+    width: 90%;
+    z-index: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.card-content {
+    padding: 2.5rem 7.5rem 3.125rem 2.5rem;
+    margin-bottom: 24.625rem;
+}
+.card-title {
+    color: rgb(41, 45, 51);
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: 140%;
+    margin-top: 0;
+    transition: color 0.2s;
+    margin-bottom: .625rem;
+}
+.card:hover .card-title {
+    color: rgb(92, 142, 230);
+}
+.card:hover {
+    border-color: rgb(92, 142, 230);
+}
+.card-text {
+    color: rgb(130, 138, 153);
+    font-family: Noto Sans;
+    font-size: 1rem;
+    font-weight: 400;
+    max-width: 19.375rem;
 }
 @media (max-width: 1700px) {
     html {
@@ -282,9 +353,6 @@ body {
     .logo-link {
         padding: 2rem;
     }
-    .logo-image {
-        max-width: 6rem;
-    }
     .header-nav {
         padding-left: 2rem;
     }
@@ -296,14 +364,17 @@ body {
     .container {
         max-width: 70rem;
     }
+    .card {
+        flex-basis: 50%;
+    }
     .header-phone {
         display: none;
     }
     .nav-bar {
-        height: 5rem;
+        height: 5.5rem;
     }
     .header-button {
-        padding-right: 2rem;
+        padding-right: 2.6rem;
         padding-left: 2rem;
     }
     .logo-link {
@@ -337,7 +408,7 @@ body {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
-        padding: 1.8rem;
+        padding: 2.1rem;
         border-right: 1px solid rgba(235, 235, 240, 0.2);
     }
     .nav-bar-light .mobile-menu-line {
@@ -444,6 +515,9 @@ body {
         transform: rotate(-45deg) translateY(-9px);
     }
     @media (max-width: 850px) {
+        .card {
+            flex-basis: 100%;
+        }
         .container {
             max-width: 40rem;
         }
@@ -465,7 +539,34 @@ body {
             max-width: 90vh;
         }
         .header-title {
-            font-size: 2.5rem;
+            font-size: 4rem;
+            margin: 1.2rem 0;
+        }
+        .header-text {
+            font-size: 1.1rem;
+            line-height: 170%;
+        }
+        .header-features {
+            margin-top: 4rem;
+        }
+        .section-title {
+            font-size: 3rem;
+        }
+        .steps-title {
+            font-size: 1.7rem;
+            margin-top: 1.2rem;
+        }
+        .section-title {
+            margin-bottom: 1.25rem;
+        }
+        .steps-num {
+            font-size: 3.8rem;
+        }
+        .content-button {
+            width: 100%;
+        }
+        .card-text {
+            max-width: 17.8125rem;
         }
     }
 }
