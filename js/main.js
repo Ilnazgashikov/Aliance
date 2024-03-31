@@ -20,7 +20,7 @@ const swiper = new Swiper('.features-sliders', {
         1024: {
           slidesPerView: 4,
         },
-        1200: {
+        1260: {
             slidesPerView: 5,
           },
     }
@@ -44,7 +44,7 @@ const swiper = new Swiper('.features-sliders', {
       850: {
         slidesPerView: 3,
       },
-      992: {
+      1060: {
         slidesPerView: 4,
       },
     }

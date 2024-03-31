@@ -203,7 +203,7 @@ body {
     margin-bottom: 0;
     margin-top: 1.125rem;
 }
-.section-light {
+.section{
     margin-top: 9.375rem;
     margin-bottom: 9.375rem;
 }
@@ -338,6 +338,51 @@ body {
     font-weight: 400;
     max-width: 19.375rem;
 }
+.cards-stm {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-stm {
+    display: flex;
+    border: 1px solid rgb(235, 235, 240);
+    flex-basis: 50%;
+    align-items:center;
+    justify-content: center;
+    padding: 3.125rem;
+    transition: border 0.2s;
+}
+.stm-image {
+    transition: fill 0.2s;
+}
+.card-stm-text {
+    margin-left: 4.375rem;
+}
+.stm-title {
+    margin: 0;
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: 160%;
+    color: rgb(41, 45, 51);
+    transition: color 0.2s;
+}
+.card-stm:hover .stm-image{
+    fill: rgb(92, 142, 230);
+}
+.card-stm:hover {
+    border-color:  rgb(92, 142, 230);
+}
+.card-stm:hover .stm-title {
+    color: rgb(92, 142, 230);
+}
+.stm-text {
+    color: rgb(130, 138, 153);
+    max-width: 22.5rem;
+    margin: 0;
+    margin-top: .625rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 160%;
+}
 @media (max-width: 1700px) {
     html {
         font-size: 14px;
@@ -360,9 +405,12 @@ body {
         margin-right: 1rem;
     }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1260px) {
     .container {
         max-width: 70rem;
+    }
+    .card-stm-text {
+        margin-left: 2.375rem;
     }
     .card {
         flex-basis: 50%;
@@ -384,12 +432,18 @@ body {
         display: flex;
     }
 }
-@media (max-width: 992px) {
+@media (max-width: 1060px) {
     html {
         font-size: 12px;
     }
     .steps-button {
         display: flex;
+    }
+    .card-stm {
+        padding: 2.125rem;
+    }
+    .card-stm-text {
+        margin-left: 2.375rem
     }
     .container {
         max-width: 65rem;
@@ -517,6 +571,14 @@ body {
     @media (max-width: 850px) {
         .card {
             flex-basis: 100%;
+        }
+        .card-stm {
+            flex-basis: 100%;
+            flex-direction: column;
+        }
+        .card-stm-text {
+            text-align: center;
+            margin-top: 40px;
         }
         .container {
             max-width: 40rem;
