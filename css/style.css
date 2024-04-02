@@ -457,9 +457,11 @@ body {
     padding: 1rem;
 }
 .clients-logo {
-    max-width: 100%;
+    width: 70px;
 }
-
+.client-logo-item:hover img{
+    content: url('../img/client_color.png');
+}
 @media (max-width: 1700px) {
     html {
         font-size: 14px;
@@ -652,6 +654,9 @@ body {
         width: 80%;
     }
     @media (max-width: 850px) {
+        .clients-logo {
+            width: 50px;
+        }
         .trademark-cards {
             flex-direction: column;
         }

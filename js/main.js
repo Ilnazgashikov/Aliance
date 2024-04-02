@@ -49,8 +49,6 @@ const swiper = new Swiper('.features-sliders', {
       },
     }
 });
-
-
 const lightMod = (event) => {
     navbar.classList.add("nav-bar-light");
     logo.href.baseVal = "img/sprites.svg#logo-black";
