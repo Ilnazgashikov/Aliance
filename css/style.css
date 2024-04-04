@@ -125,9 +125,13 @@ body {
     line-height: 160%;
     color: #fff;
     padding: 1.5625rem 2.8125rem;
-    background: rgb(92, 142, 230);
+    background-color: rgb(92, 142, 230);
     border: none;
     cursor: pointer;
+    transition: background-color 0.2s;
+}
+.button:hover {
+    background-color: rgb(138, 174, 236);
 }
 .header-button {
     height: 100%;
@@ -238,7 +242,14 @@ body {
     height: 100%;
     width: 80px;
     cursor: pointer;
+    transition: background-color 0.2s;
 }   
+.primary-button-next:hover {
+    background-color: rgb(138, 174, 236);
+}
+.primary-button-prev:hover {
+    background-color: rgb(138, 174, 236);
+}
 .steps-button {
     display: none;
 }
@@ -530,6 +541,7 @@ body {
     .header-bg {
         background-position: center;
     }
+      
 }
 @media (max-width: 1460px) {
     html {
@@ -802,5 +814,23 @@ body {
         .client-logo-item {
             flex-basis: 50%;
         }
-    }
+        .button:hover:not([disabled]) {
+            background-color: #5c8ee6;
+          }
+          .primary-button-next:hover:not([disabled]) {
+            background-color: #5c8ee6;
+          }
+          .primary-button-prev:hover:not([disabled]) {
+            background-color: #5c8ee6;
+          }
+          .button:hover:not([disabled]) {
+            background-color: #5c8ee6;
+          }
+          .primary-button-next:hover:not([disabled]) {
+            background-color: #5c8ee6;
+          }
+          .primary-button-prev:hover:not([disabled]) {
+            background-color: #5c8ee6;
+          }
+        }
 }
