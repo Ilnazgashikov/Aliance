@@ -49,6 +49,20 @@ const swiper = new Swiper('.features-sliders', {
       },
     }
 });
+const swiperblog = new Swiper('.blog-slider', {
+  speed: 400,
+  slidesPerView: 1,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: '.blog-button-next',
+    prevEl: '.blog-button-prev',
+  },
+  breakpoints: {
+    850: {
+      slidesPerView: 2,
+    },
+  }
+});
 const lightMod = (event) => {
     navbar.classList.add("nav-bar-light");
     logo.href.baseVal = "img/sprites.svg#logo-black";

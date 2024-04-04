@@ -225,21 +225,26 @@ body {
 .steps-item {
     max-width: 20.625rem;
 }
-.steps-button {
-    display: none;
-    height: 40px;
-    margin-top: 30px;
+.primary-buttons-wrapper {
+    display: flex;
+    height: 60px;
     justify-content: flex-end;
 }
-.steps-button-next, .steps-button-prev {
+.primary-button-next, .primary-button-prev {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #5c8ee6;
     height: 100%;
-    width: 60px;
+    width: 80px;
     cursor: pointer;
 }   
+.steps-button {
+    display: none;
+}
+.primary-buttons-wrapper {
+    height: 40px;
+}
 .steps-num{
     font-family: "Bebas Neue", sans-serif;
     font-size: 3rem;
@@ -455,12 +460,68 @@ body {
     align-items: center;
     justify-content: center;
     padding: 1rem;
+    transition: border 0.2s;
 }
 .clients-logo {
     width: 70px;
+    filter: grayscale(100%);
+    transition: filter 0.2s;
+}
+.client-logo-item:hover {
+    border-color: rgb(92, 142, 230);
 }
 .client-logo-item:hover img{
-    content: url('../img/client_color.png');
+    filter: grayscale(0%);
+}
+.blog-card {
+    display: flex;
+    position: relative;
+    min-height: 25rem; 
+    flex-direction: column;
+    text-decoration: none;
+    color: #fff;
+    justify-content: flex-end;
+    padding: 3.125rem;
+}
+.blog-card::before {
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(41, 45, 51, 0.6);
+    z-index: -1;
+}
+.blog-card-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+.blog-card-title {
+    color: rgb(255, 255, 255);
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: 160%;
+    margin-bottom: .625rem;
+    margin-top: 0;
+}
+.blog-card-text {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 160%;
+    margin: 0;
+}
+.blog-slider-footer {
+    display: flex;
+    align-items: center;
+    margin-top: 1.875rem;
+    justify-content: space-between;
 }
 @media (max-width: 1700px) {
     html {
@@ -685,6 +746,12 @@ body {
         }
         .clients-list {
             width: 100%;
+        }
+        .blog-card-text {
+            display: none;
+        }
+        .blog-card {
+            padding: 1.3125rem;
         }
     }
     @media (max-width: 576px) {
