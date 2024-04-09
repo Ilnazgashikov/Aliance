@@ -106,6 +106,7 @@ modalToggle.forEach((element) => {
 modal.addEventListener("click", (event) => {
   if (this.event.target === modal) {
     modal.classList.remove("modal-is-open");
+    document.body.style.overflow = "";
   }
 });
 modalClose.addEventListener("click", (event) => {
@@ -114,9 +115,9 @@ modalClose.addEventListener("click", (event) => {
   modal.classList.remove("modal-is-open");
 });
 
-  document.body.addEventListener('keydown', function(e) {
-    if (e.key == "Escape") {
-      modal.classList.remove("modal-is-open");
-      document.body.style.overflow = "";
-    }
-  });
+document.body.addEventListener('keydown', function(e) {
+  if (e.key == "Escape") {
+    modal.classList.remove("modal-is-open");
+    document.body.style.overflow = "";
+  }
+});
