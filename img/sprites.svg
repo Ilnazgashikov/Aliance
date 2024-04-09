@@ -207,6 +207,14 @@
 		<path id="Vector" d="M5.93 6.53C7.03 6.27 8.15 5.31 8.15 3.52C8.15 1.63 6.86 0.25 4.74 0.25L0 0.25L0 2.15L2.16 2.15L2.32 2.15L4.42 2.15C5.29 2.15 5.95 2.66 5.95 3.52C5.95 4.37 5.29 4.89 4.42 4.89L2.32 4.89L2.16 4.89L0 4.89L0 10.39L2.16 10.39L2.16 6.79L3.74 6.79L5.73 10.4L8.21 10.4L5.93 6.53Z" fill="#828A99" fill-opacity="1.000000" fill-rule="nonzero"/>
 	</g>
 </symbol>
+<symbol id="close" width="17.000000" height="17.000000" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs/>
+	<path id="Vector" d="M-0.14 -0.85L-0.84 -0.14L7.29 7.99L-0.84 16.13L-0.14 16.83L7.99 8.7L16.13 16.83L16.83 16.13L8.7 7.99L16.83 -0.14L16.13 -0.85L7.99 7.29L-0.14 -0.85Z" fill="#828A99" fill-opacity="1.000000" fill-rule="nonzero"/>
+</symbol>
+
 
 
 
