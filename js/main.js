@@ -91,6 +91,7 @@ window.addEventListener('scroll', ()=>{
     menu.classList.contains("is-open") ? closeMenu() : openMenu();
 });
 
+const modalDialog = document.querySelector(".modal-dialog");
 const modal = document.querySelector(".modal");
 const modalToggle = document.querySelectorAll("[data-toggle=modal]");
 const modalClose = document.querySelector(".modal-close");
@@ -99,9 +100,23 @@ modalToggle.forEach((element) => {
     event.preventDefault;
     console.log("click");
     modal.classList.add("modal-is-open");
+    document.body.style.overflow = "hidden";
   });
+});
+modal.addEventListener("click", (event) => {
+  if (this.event.target === modal) {
+    modal.classList.remove("modal-is-open");
+  }
 });
 modalClose.addEventListener("click", (event) => {
   event.preventDefault();
+  document.body.style.overflow = "";
   modal.classList.remove("modal-is-open");
 });
+
+  document.body.addEventListener('keydown', function(e) {
+    if (e.key == "Escape") {
+      modal.classList.remove("modal-is-open");
+      document.body.style.overflow = "";
+    }
+  });
