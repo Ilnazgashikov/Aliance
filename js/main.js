@@ -2,6 +2,7 @@ const navbar = document.querySelector(".nav-bar");
 const logo = document.querySelector(".logo-image use");
 const menuToggle = document.querySelector(".mobile-menu-toggle");
 const menu = document.querySelector(".mobile-menu");
+const headerNav = document.querySelector(".header-nav");
 const isFront = document.body.classList.contains("front-page");
 const navBarToggle = document.body.querySelector(".nav-bar-toggle");
 const swiper = new Swiper('.features-sliders', {
@@ -92,8 +93,7 @@ const closeMenu = (event) => {
     }
 }
 window.addEventListener('scroll', ()=>{
-  if (window.screen.width >= 1060) {
-    console.log(window.screen.width);
+  if (getComputedStyle(headerNav).display !== 'none') {
     this.scrollY > 1? changeNavHeight("4.5rem") : changeNavHeight("5.875rem");
   }
   if (isFront) {
