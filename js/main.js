@@ -81,7 +81,7 @@ const openMenu = (event) => {
     menuToggle.classList.add("close-menu");
     document.body.style.overflow = "hidden";
     if (isFront) {
-      navbar.classList.toggle("nav-bar-light");
+      lightMod();
     }
 }
 const closeMenu = (event) => {
@@ -89,7 +89,7 @@ const closeMenu = (event) => {
     menuToggle.classList.remove("close-menu");
     document.body.style.overflow = "";
     if (isFront) {
-      navbar.classList.toggle("nav-bar-light");
+      blackMod();
     }
 }
 window.addEventListener('scroll', ()=>{
