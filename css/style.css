@@ -16,6 +16,7 @@ body {
 .mobile-menu {
     display: none;
 }
+
 .header {
     padding-top: 5.8rem;
 }
@@ -50,10 +51,21 @@ body {
     top: 0;
     transition: 0.2s background-color, 0.2s height;
 }
+.nav-bar .logo-black {
+    display: none;
+}
 .nav-bar-light {
     background-color: #fff;
     color: rgb(41, 45, 51);
     border-bottom: none;
+}
+.nav-bar-light .logo-black{
+    display: block;
+}
+.nav-bar-light .logo-light {
+    display: none; 
+}
+.nav-bar-scroll {
     height: 4.5rem;
 }
 .logo-link {
