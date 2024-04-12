@@ -834,6 +834,95 @@ body {
     width: 100%;
     display: block;
 }
+.header-bg-color {
+    background-color: rgb(240, 242, 245);
+    position: relative;
+}
+.first-header-state {
+    padding: 3.125rem 0;
+}
+.text-area-title {
+    font-family: Bebas Neue;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 120%;
+    margin-top: 1.875rem;
+    margin-bottom: 1.25rem;
+}
+.first-header-state, .second-header-state .text-area-title {
+    color: rgb(41, 45, 51);
+} 
+.third-header-state .text-area-title {
+    color: #fff;
+}
+.text-area-link-page:not(:last-child)::after {
+    content: "";
+    display: inline-block;
+    margin-bottom: 5px;
+    width: .875rem;
+    margin: 0 .625rem;
+    height: 1px;
+    background-color: rgb(130, 138, 153);
+
+}
+.first-header-state .img-area {
+    display: none;
+}
+.third-header-state  {
+    display: flex;
+    padding: 3.125rem 0;
+}
+.third-header-state .text-area {
+    z-index: 1;
+    color: #fff;
+}
+.third-header-state .img-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+.third-header-state .text-area-link-page:not(:last-child)::after {
+    background-color: #fff;
+}
+.second-header-state {
+    display: flex;
+    padding: 3.125rem 0;
+}
+.second-header-state .img-area {
+    display: block;
+    position: absolute;
+    margin: 0;
+    right: 14.375rem;
+    width: 30rem;
+    height: 15rem;
+    bottom: 0;
+}
+.text-area-link {
+    display: flex;
+}
+.text-area-link-page {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 160%;
+}
+.second-header-state, .first-header-state .text-area-link-page:not(:last-child) {
+    color: rgb(130, 138, 153);
+}
+.third-header-state .text-area-link-page:not(:last-child) {
+    color: #fff;
+}
+.third-header-state .text-area-link-page:last-child {
+    color: #fff;
+}
+.second-header-state, .first-header-state .text-area-link-page:last-child {
+    color: rgb(41, 45, 51);
+}
 @media (max-width: 1700px) {
     html {
         font-size: 14px;
@@ -1053,6 +1142,9 @@ body {
         left: -28.125rem;
     }
     @media (max-width: 850px) {
+        .second-header-state .img-area  {
+            display: none;
+        }
         .footer-top {
             flex-direction: column;
             align-items: flex-start;
