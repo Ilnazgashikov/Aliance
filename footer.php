@@ -1,132 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/swiper-bundle.min.css">
-        <link href="css/normalize.css" rel="stylesheet" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
-        <link rel="stylesheet" href="css/style.css">
-        <title>О компании - Aliance</title>
-    </head>
-<body>
-    <div class="mobile-menu">
-        <ul class="mobile-menu-nav">
-            <li class="mobile-nav-item"><a href="about.html" class="mobile-nav-link">О компании</a></li>
-            <li class="mobile-nav-item"><a href="" class="mobile-nav-link">Контрактное производтсво</a>
-                <ul class="mobile-submenu">
-                    <li class="mobile-submenu-item">
-                        <a class="mobile-submenu-link" href="#">Автомобильная химия</a>
-                    </li>
-                    <li class="mobile-submenu-item">
-                        <a class="mobile-submenu-link" href="#">Бытовая химия</a>
-                    </li>
-                    <li class="mobile-submenu-item">
-                        <a class="mobile-submenu-link" href="#">Дезинцифирующие средства</a>
-                    </li>
-                    <li class="mobile-submenu-item">
-                        <a class="mobile-submenu-link" href="#">Пищевые аэрозоли</a>
-                    </li>
-                    <li class="mobile-submenu-item">
-                        <a class="mobile-submenu-link" href="#">Косметическая продукция</a>
-                    </li>
-                    <li class="mobile-submenu-item">
-                        <a class="mobile-submenu-link" href="#">Краски аэрозольные</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="mobile-nav-item"><a href="" class="mobile-nav-link">Собственные торговые марки</a></li>
-            <li class="mobile-nav-item"><a href="" class="mobile-nav-link">Новости</a></li>
-            <li class="mobile-nav-item"><a href="" class="mobile-nav-link">Контакты</a></li>
-        </ul> 
-        <a href="tel:+74996861014" class="mobile-phone">+7 (499) 686-10-14
-        </a>
-        <div class="mobile-info">
-            <svg class="header-phone-icon" width="12" height="17">
-                <use href="img/sprites.svg#adress"></use>
-            </svg>
-            <adress class="mobile-info-adress">г. Мосвка, Холодильный пер. 4к1с8</adress>
-        </div>
-        <div class="mobile-info">
-            <svg class="header-phone-icon" width="16" height="12">
-                <use href="img/sprites.svg#mail"></use>
-            </svg>
-            <a href="mailto:a.dragunov@tdaliance.ru" class="mobile-email">a.dragunov@tdaliance.ru</a>
-        </div>
-
-        <div class="social-network-link">
-            <svg class="header-phone-icon" width="24" height="24">
-                <use href="img/sprites.svg#vk"></use>
-            </svg>
-            <svg class="header-phone-icon" width="24" height="24">
-                <use href="img/sprites.svg#inst"></use>
-            </svg>
-        </div>
-    </div>
-    <nav class="nav-bar nav-bar-light">
-        <a href="" class="nav-bar-toggle mobile-menu-toggle">
-            <div class="mobile-menu-line"></div>
-            <div class="mobile-menu-line"></div>
-            <div class="mobile-menu-line"></div>
-        </a>
-        <a href="./" class="logo-link ">
-            <svg class="logo-light" width="140" height="40">
-                <use href="img/sprites.svg#logo"></use>
-            </svg>
-            <svg class="logo-black" width="140" height="40">
-                <use href="img/sprites.svg#logo-black"></use>
-            </svg>
-        </a>
-            <ul class="header-nav">
-                <li class="header-nav-item"><a href="" class="header-nav-link">О компании</a></li>
-                <li class="header-nav-item"><a href="" class="header-nav-link">Контрактное производтсво</a></li>
-                <li class="header-nav-item"><a href="" class="header-nav-link">Собственные торговые марки</a></li>
-                <li class="header-nav-item"><a href="" class="header-nav-link">Новости</a></li>
-                <li class="header-nav-item"><a href="" class="header-nav-link">Контакты</a></li>
-            </ul> 
-            <div class="header-phone">
-                <svg class="header-phone-icon" width="24" height="24">
-                    <use href="img/sprites.svg#phone"></use>
-                </svg>
-                <a href="tel:+74996861014" class="header-phone-link">+7 (499) 686-10-14</a>
-            </div>
-            <button class="header-button button" data-toggle="modal">
-                <svg class="button-icon" width="24" height="24">
-                    <use href="img/sprites.svg#phone"></use>
-                </svg>
-                <span class="button-text">Получить консультацию</span>
-            </button>
-    </nav>
-    <header class="header header-bg-color">
-        <div class="container">
-            <div class="first-header-state">
-                <div class="text-area">
-                    <div class="separator"></div>
-                    <h1 class="text-area-title">
-                        О нас
-                    </h1>
-                    <div class="text-area-link">
-                        <span class="text-area-link-page">
-                            Главная
-                        </span>                   
-                        <span class="text-area-link-page">
-                            О компании
-                        </span>
-                    </div>
-                    
-                </div>
-                <img src="img/third-header-bg.png" alt="" class="img-area">
-            </div>
-        </div>
-    </header>
-    <section class="cta">
+<section class="cta">
         <div class="bg-grey section-cta">
             <img src="img/cta.png" alt="" class="cta-image">
             <div class="cta-from-wrapper container">
-                <form action="#" class="cta-form">
+                <form action="handler.php" method="POST" class="cta-form">
                     <h2 class="section-title cta-from-title">Хотите сотрудничать?</h2>
                     <p class="cta-form-text">
                         Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!
@@ -136,6 +12,7 @@
                             <input 
                             id="user-name" 
                             type="text" 
+                            name="user_name"
                             class="input"
                             placeholder=" ">
                             <label class="input-group-label"  for="user-name">Имя</label>
@@ -144,6 +21,7 @@
                             <input 
                             id="user-phone" 
                             type="tel" 
+                            name="user_phone"
                             class="input"
                             placeholder=" ">
                             <label class="input-group-label" for="user-phone">Номер телефона</label>
@@ -164,13 +42,13 @@
             </div>
         </div>
     </section>
-        <footer class="footer">
+    <footer class="footer">
         <div class="container">
             <div class="footer-top">
                 <svg class="logo-image footer-logo" width="140" height="40">
                     <use href="img/sprites.svg#logo-black"></use>
                 </svg>
-                <a href="tel:+74996861014" class="footer-phone">+7 (499) 686-10-14</a>
+                <a href="tel:+79996861014" class="footer-phone">+7 (999) 686-10-14</a>
                 <div class="footer-info footer-info-first">
                     <svg class="header-phone-icon" width="12" height="17">
                         <use href="img/sprites.svg#adress"></use>
@@ -237,7 +115,7 @@
                 <div class="footer-menu-wrapper">
                     <ul class="footer-menu-list">
                         <li class="footer-menu-item">
-                            <a href="#" class="footer-menu-link footer-menu-link-bold">О компании</a>
+                            <a href="about.php" class="footer-menu-link footer-menu-link-bold">О компании</a>
                         </li>
                         <li class="footer-menu-item">
                             <a href="#" class="footer-menu-link footer-menu-link-bold">Новости</a>
@@ -253,7 +131,7 @@
         <div class="container">
             <div class="footer-wrapper">
                 <div class="footer-legal">
-                    <p class="footer-copyright">&copy; 2022 «Aliance Production». Все права защищены.</p>
+                    <p class="footer-copyright">&copy; <?php echo date('d.m.Y'); ?> «Aliance Production». Все права защищены.</p>
                     <a href="#" class="footer-policy">Политики конфиденциальности</a>  
                 </div>
                 <div class="footer-author">
@@ -275,12 +153,13 @@
                 </svg>
             </a>
             <p class="modal-text">Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!</p>
-            <form action="#" class="modal-form">
+            <form action="handler.php" method="POST" class="modal-form">
                 <div class="input-group-wrapper input-group-vertical">
                     <div class="input-group modal-input-group">
                         <input 
                         id="user-name-modal" 
                         type="text" 
+                        name="user_name"
                         class="input modal-input"
                         placeholder=" ">
                         <label class="input-group-label modal-input-label"  for="user-name-modal">Имя</label>
@@ -289,6 +168,7 @@
                         <input 
                         id="user-phone-modal" 
                         type="tel" 
+                        name="user_phone"
                         class="input modal-input"
                         placeholder=" ">
                         <label class="input-group-label modal-input-label" for="user-phone-modal">Номер телефона</label>
@@ -307,8 +187,4 @@
                 </div>
             </form>
         </div>
-    </div> 
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/main.js"></script> 
-</body>
-</html>
+    </div>  
