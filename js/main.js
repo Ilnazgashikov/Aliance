@@ -72,7 +72,6 @@ const lightMod = (event) => {
 const blackMod = (event) => {
     navbar.classList.remove("nav-bar-light");
 } 
-
 const changeNavHeight = (height) => {
   navbar.style.height = height;
 };
@@ -134,4 +133,32 @@ document.body.addEventListener('keydown', function(e) {
     modal.classList.remove("modal-is-open");
     document.body.style.overflow = "";
   }
+});
+const forms = document.querySelectorAll("form");
+forms.forEach((form) => {
+  const validation = new JustValidate(form, {
+    errorFieldCssClass: 'is-invalid',
+  });
+  validation
+  .addField('[name=user_name]', [
+    {
+      rule: 'required',
+      errorMessage: "Укажиет имя",
+    },
+    {
+      rule: 'maxLength',
+      value: 30,
+      errorMessage: "Максимально 30 символов",
+    },
+  ])
+  .addField('[name=user_phone]', [
+    {
+      rule: 'required',
+      errorMessage: 'Укажите телефон',
+    },
+  ])
+  .onSuccess((event) => {
+    console.log('Validation passes and form submitted', event);
+  });
+
 });

@@ -586,6 +586,20 @@ body {
     display: flex;
     gap: 1.875rem;
 }
+.input.is-invalid {
+    border: 1px solid red;
+}
+.just-validate-error-label {
+    position: absolute;
+    top: 0;
+    font-size: 0.8rem;
+    right: 10px;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    background-color: inherit;
+    transform: translateY(-50%);
+    display: inline-block;
+}
 .input-group-vertical {
     display: flex;
     flex-direction: column;
@@ -1000,6 +1014,7 @@ body {
     .footer-phone {
         font-size: 1.4rem;
     }
+    
     html {
         font-size: 12px;
     }
