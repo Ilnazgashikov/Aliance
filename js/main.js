@@ -157,13 +157,13 @@ forms.forEach((form) => {
       errorMessage: 'Укажите телефон',
     },
     {
-      rule: 'maxNumber',
-      value: 11,
-      errorMessage: 'Некорректный номер',
-    },
-    {
       rule: 'number',
       errorMessage: 'Номер должен состоять из цифр',
+    },
+    {
+      rule: 'maxLength',
+      value: 11,
+      errorMessage: 'Некорректный номер',
     },
   ])
 
