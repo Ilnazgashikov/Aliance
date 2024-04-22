@@ -157,11 +157,16 @@ forms.forEach((form) => {
       errorMessage: 'Укажите телефон',
     },
     {
-      rule: 'maxLength',
+      rule: 'maxNumber',
       value: 11,
       errorMessage: 'Некорректный номер',
     },
+    {
+      rule: 'number',
+      errorMessage: 'Номер должен состоять из цифр',
+    },
   ])
+
   .onSuccess((event) => {
     const thisForm = event.target;
     const formData = new FormData(thisForm);
@@ -170,7 +175,12 @@ forms.forEach((form) => {
         method: thisForm.getAttribute("method"),
         body: formData,
       }).then ((response) => {
-        console.log(response);
+        if (response.ok) {
+          alert("Форма отправлена");
+        }
+        else {
+          alert(response.textContent)
+        }
       });
     }
     ajaxSend(formData);
