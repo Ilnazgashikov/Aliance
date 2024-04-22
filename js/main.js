@@ -156,9 +156,24 @@ forms.forEach((form) => {
       rule: 'required',
       errorMessage: 'Укажите телефон',
     },
+    {
+      rule: 'maxLength',
+      value: 11,
+      errorMessage: 'Некорректный номер',
+    },
   ])
   .onSuccess((event) => {
-    console.log('Validation passes and form submitted', event);
+    const thisForm = event.target;
+    const formData = new FormData(thisForm);
+    const ajaxSend = (formData) => {
+      fetch(thisForm.getAttribute("action"), {
+        method: thisForm.getAttribute("method"),
+        body: formData,
+      }).then ((response) => {
+        console.log(response);
+      });
+    }
+    ajaxSend(formData);
   });
 
 });
