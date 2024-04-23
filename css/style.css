@@ -779,6 +779,16 @@ body {
     font-weight: 600;
 
 }
+.button-alert-modal {
+    width: 100%;
+}
+.return-alert-link {
+    cursor: pointer;
+}
+.alert-img {
+    width: 100%;
+    margin-bottom: 1.875rem;
+}
 .modal {
     opacity: 0;
     visibility: hidden;
