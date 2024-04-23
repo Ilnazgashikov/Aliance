@@ -104,36 +104,34 @@ menuToggle.addEventListener("click", (event) => {
     menu.classList.contains("is-open") ? closeMenu() : openMenu();
 });
 
-const modalDialog = document.querySelector(".modal-dialog");
-const modal = document.querySelector(".modal");
+let currentModal;
+let modalDialog;
+let alertModal = document.querySelector("#alert-modal");
 const modalToggle = document.querySelectorAll("[data-toggle=modal]");
 const modalClose = document.querySelector(".modal-close");
-modalToggle.forEach((element) => {
-  element.addEventListener("click", (event) => {
-    event.preventDefault;
-    console.log("click");
-    modal.classList.add("modal-is-open");
-    document.body.style.overflow = "hidden";
+
+const modalButtons = document.querySelectorAll("[data-toggle=modal]");
+modalButtons.forEach((button) => {
+  button.addEventListener("click", (event) => {
+    event.preventDefault();
+    currentModal = document.querySelector(button.dataset.target);
+    console.log(currentModal);
+    currentModal.classList.toggle("modal-is-open");
+    modalDialog= currentModal.querySelector(".modal-dialog");
+    currentModal.addEventListener("click", event => {
+      if (!event.composedPath().includes(modalDialog)) {
+        currentModal.classList.remove("modal-is-open");
+      }
+    });
   });
 });
-modal.addEventListener("click", (event) => {
-  if (this.event.target === modal) {
-    modal.classList.remove("modal-is-open");
-    document.body.style.overflow = "";
-  }
-});
-modalClose.addEventListener("click", (event) => {
-  event.preventDefault();
-  document.body.style.overflow = "";
-  modal.classList.remove("modal-is-open");
-});
-
 document.body.addEventListener('keydown', function(e) {
   if (e.key == "Escape") {
-    modal.classList.remove("modal-is-open");
+    currentModal.classList.remove("modal-is-open");
     document.body.style.overflow = "";
   }
 });
+
 const forms = document.querySelectorAll("form");
 forms.forEach((form) => {
   const validation = new JustValidate(form, {
@@ -171,8 +169,18 @@ forms.forEach((form) => {
         body: formData,
       }).then ((response) => {
         if (response.ok) {
-          alert("Форма отправлена");
           thisForm.reset();
+          if (currentModal != null) {
+            currentModal.classList.remove("modal-is-open");
+          }
+          alertModal.classList.add("modal-is-open");
+          currentModal = alertModal;
+          modalDialog= currentModal.querySelector(".modal-dialog");
+          currentModal.addEventListener("click", event => {
+            if (!event.composedPath().includes(modalDialog)) {
+              currentModal.classList.remove("modal-is-open");
+            }
+          });
         }
         else {
           alert(response.textContent)
