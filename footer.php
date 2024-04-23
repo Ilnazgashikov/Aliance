@@ -23,7 +23,7 @@
                             id="user-phone" 
                             type="tel" 
                             name="user_phone"
-                            class="input"
+                            class="input phone-mask"
                             placeholder=" "
                             >
                             <label class="input-group-label" for="user-phone">Номер телефона</label>
@@ -172,7 +172,7 @@
                         id="user-phone-modal" 
                         type="tel" 
                         name="user_phone"
-                        class="input modal-input"
+                        class="input modal-input phone-mask"
                         placeholder=" "
                         >
                         <label class="input-group-label modal-input-label" for="user-phone-modal">Номер телефона</label>
