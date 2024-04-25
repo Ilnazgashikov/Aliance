@@ -16,7 +16,7 @@
     <div class="mobile-menu">
         <ul class="mobile-menu-nav">
             <li class="mobile-nav-item"><a href="about.php" class="mobile-nav-link">О компании</a></li>
-            <li class="mobile-nav-item"><a href="" class="mobile-nav-link">Контрактное производтсво</a>
+            <li class="mobile-nav-item"><a href="contracts.php" class="mobile-nav-link">Контрактное производтсво</a>
                 <ul class="mobile-submenu">
                     <li class="mobile-submenu-item">
                         <a class="mobile-submenu-link" href="#">Автомобильная химия</a>
@@ -38,7 +38,7 @@
                     </li>
                 </ul>
             </li>
-            <li class="mobile-nav-item"><a href="" class="mobile-nav-link">Собственные торговые марки</a></li>
+            <li class="mobile-nav-item"><a href="trademarks-page.php" class="mobile-nav-link">Собственные торговые марки</a></li>
             <li class="mobile-nav-item"><a href="" class="mobile-nav-link">Новости</a></li>
             <li class="mobile-nav-item"><a href="" class="mobile-nav-link">Контакты</a></li>
         </ul> 
@@ -82,8 +82,8 @@
         </a>
             <ul class="header-nav">
                 <li class="header-nav-item"><a href="about.php" class="header-nav-link">О компании</a></li>
-                <li class="header-nav-item"><a href="" class="header-nav-link">Контрактное производтсво</a></li>
-                <li class="header-nav-item"><a href="" class="header-nav-link">Собственные торговые марки</a></li>
+                <li class="header-nav-item"><a href="contracts.php" class="header-nav-link">Контрактное производтсво</a></li>
+                <li class="header-nav-item"><a href="trademarks-page.php" class="header-nav-link">Собственные торговые марки</a></li>
                 <li class="header-nav-item"><a href="" class="header-nav-link">Новости</a></li>
                 <li class="header-nav-item"><a href="" class="header-nav-link">Контакты</a></li>
             </ul> 
@@ -259,29 +259,10 @@
 
         </div>
     </section>
-    <section class="section trademark">
-        <div class="container">
-            <div class="separator"></div>
-            <h2 class="section-title">Собственные марки</h2>
-            <div class="trademark-cards">
-                <div class="trademark-card">
-                    <svg class="trademark-card-logo">
-                        <use href="img/sprites.svg#ag-tech"></use> 
-                    </svg>
-                    <h3 class="trademark-card-title">Автохимия AG-Tech</h3>
-                    <p class="trademark-card-text">Для современного мира разбавленное изрядной долей эмпатии, рациональное мышление создаёт предпосылки для поставленных обществом задач.</p>
-                </div>
-                <div class="trademark-card">
-                    <svg class="trademark-card-logo">
-                        <use href="img/sprites.svg#aliance_production"></use> 
-                    </svg>
-                    <h3 class="trademark-card-title">Автохимия AP</h3>
-                    <p class="trademark-card-text">Для современного мира разбавленное изрядной долей эмпатии, рациональное мышление создаёт предпосылки для поставленных обществом задач.</p>
-                </div>
-            </div>
-
-        </div>
-    </section>
+    <?php 
+    $block_title = "Собственные марки";
+    include_once('template-parts/trademarks-section.php'); 
+    ?>
     <section class="section founder">
         <img src="img/founder.jpeg" alt="" class="founder-image">
         <div class="container">
@@ -429,8 +410,3 @@
         </div>
     </section>  
     <?php include_once('footer.php'); ?>
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/just-validate.production.min.js"></script>
-    <script src="js/main.js"></script>
-</body>
-</html>
