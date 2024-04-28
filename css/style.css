@@ -94,7 +94,7 @@ body {
 .header-nav-item {
     display: flex;
     height: 100%;
-    flex-shrink: 0;
+    flex-shrink: 1;
     align-items:center;
 }
 .header-nav-item:not(:last-child) {
@@ -1030,7 +1030,6 @@ body {
     .footer-phone {
         font-size: 1.4rem;
     }
-    
     html {
         font-size: 12px;
     }
@@ -1158,10 +1157,10 @@ body {
         display: none;
     }
     .close-menu .mobile-menu-line:nth-child(1) {
-        transform: rotate(45deg)  translateY(9px);
+        transform: rotate(45deg)  translateY(12px);
     }
     .close-menu .mobile-menu-line:nth-child(3) {
-        transform: rotate(-45deg) translateY(-9px);
+        transform: rotate(-45deg) translateY(-13px);
     }
     .clients-wrapper {
         flex-direction: column;

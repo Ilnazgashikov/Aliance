@@ -79,22 +79,25 @@ const openMenu = (event) => {
     menu.classList.add("is-open");
     menuToggle.classList.add("close-menu");
     document.body.style.overflow = "hidden";
-    if (isFront) {
-      lightMod();
-    }
+    lightMod();
 }
 const closeMenu = (event) => {
     menu.classList.remove("is-open");
     menuToggle.classList.remove("close-menu");
     document.body.style.overflow = "";
-    if (isFront) {
-      blackMod();
-    }
+    blackMod();
 }
+window.addEventListener(`resize`, event => {
+	changeNavHeight("5.875rem")
+}, false);
 window.addEventListener('scroll', ()=>{
-  if (getComputedStyle(headerNav).display !== 'none') {
+  if (window.innerWidth > 1060) {
     this.scrollY > 1? changeNavHeight("4.5rem") : changeNavHeight("5.875rem");
   }
+  else {
+    changeNavHeight("5.875rem")
+  }
+
   if (isFront) {
     this.scrollY > 1? lightMod() : blackMod();
   }

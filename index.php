@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,7 +47,7 @@
             <svg class="header-phone-icon" width="12" height="17">
                 <use href="img/sprites.svg#adress"></use>
             </svg>
-            <adress class="mobile-info-adress">г. Мосвка, Холодильный пер. 4к1с8</adress>
+            <span class="mobile-info-adress">г. Мосвка, Холодильный пер. 4к1с8</span>
         </div>
         <div class="mobile-info">
             <svg class="header-phone-icon" width="16" height="12">
@@ -218,7 +218,7 @@
                             <picture>
                                 <source type="image/webp" srcset="img/avto-him.webp" >
                                 <source type="image/png" srcset="img/avto-him.png">
-                                <img src="img/avto-him.png" class="card-image">
+                                <img src="img/avto-him.png" class="card-image" alt="Автомобильная химия">
                             </picture>
                         </div>
                     </a>
@@ -229,7 +229,7 @@
                             <picture>
                                 <source type="image/webp" srcset="img/bit-him.webp" >
                                 <source type="image/png" srcset="img/bit-him.png">
-                                <img src="img/bit-him.png" class="card-image">
+                                <img src="img/bit-him.png" class="card-image" alt="Бытовая химия">
                             </picture>
                         </div>
                     </a>
@@ -240,7 +240,7 @@
                             <picture>
                                 <source type="image/webp" srcset="img/dezinfect.webp" >
                                 <source type="image/png" srcset="img/dezinfect.png">
-                                <img src="img/dezinfect.png" class="card-image">
+                                <img src="img/dezinfect.png" class="card-image" alt="Дезинфекция">
                             </picture>
                         </div>
                     </a>
@@ -251,7 +251,7 @@
                             <picture>
                                 <source type="image/webp" srcset="img/dezinfect.webp" >
                                 <source type="image/png" srcset="img/dezinfect.png">
-                                <img src="img/dezinfect.png" class="card-image">
+                                <img src="img/dezinfect.png" class="card-image" alt="Дезинфекция">
                             </picture>    
                         </div>
                     </a>
@@ -262,7 +262,7 @@
                             <picture>
                                 <source type="image/webp" srcset="img/avto-him.webp" >
                                 <source type="image/png" srcset="img/avto-him.png">
-                                <img src="img/avto-him.png" class="card-image">
+                                <img src="img/avto-him.png" class="card-image" alt="Автомобильная химия">
                             </picture>
                         </div>
                     </a>
@@ -273,7 +273,7 @@
                             <picture>
                                 <source type="image/webp" srcset="img/bit-him.webp" >
                                 <source type="image/png" srcset="img/bit-him.png">
-                                <img src="img/bit-him.png" class="card-image">
+                                <img src="img/bit-him.png" class="card-image" alt="Бытовая химия">
                             </picture>
                         </div>
                     </a>
@@ -289,7 +289,7 @@
         <picture>
             <source type="image/webp" srcset="img/founder.webp" >
             <source type="image/jpeg" srcset="img/founder.jpeg">
-            <img src="img/founder.jpeg" class="founder-image">
+            <img src="img/founder.jpeg" class="founder-image" alt="Основатель">
         </picture>
         <div class="container">
             <div class="founder-content-wrapper">
@@ -373,67 +373,67 @@
                     </ul>
                 </div>
                 <div class="clients-logo-list">
-                    <a href="#"class="client-logo-item">
+                    <a href="#" class="client-logo-item">
                         <picture>
                             <source type="image/webp" srcset="img/client_color.webp" >
                             <source type="image/png" srcset="img/client_color.png">
-                            <img src="img/client_color.png" class="clients-logo">
+                            <img src="img/client_color.png" class="clients-logo" alt="Клиент">
                         </picture>
                     </a>
-                    <a href="#"class="client-logo-item">
+                    <a href="#" class="client-logo-item">
                         <picture>
                             <source type="image/webp" srcset="img/client_color.webp" >
                             <source type="image/png" srcset="img/client_color.png">
-                            <img src="img/client_color.png" class="clients-logo">
+                            <img src="img/client_color.png" class="clients-logo" alt="Клиент">
                         </picture>
                     </a>
-                    <a href="#"class="client-logo-item">
+                    <a href="#" class="client-logo-item">
                         <picture>
                             <source type="image/webp" srcset="img/client_color.webp" >
                             <source type="image/png" srcset="img/client_color.png">
-                            <img src="img/client_color.png" class="clients-logo">
+                            <img src="img/client_color.png" class="clients-logo" alt="Клиент">
                         </picture>
                     </a>
-                    <a href="#"class="client-logo-item">
+                    <a href="#" class="client-logo-item">
                         <picture>
                             <source type="image/webp" srcset="img/client_color.webp" >
                             <source type="image/png" srcset="img/client_color.png">
-                            <img src="img/client_color.png" class="clients-logo">
+                            <img src="img/client_color.png" class="clients-logo" alt="Клиент">
                         </picture>
                     </a>
-                    <a href="#"class="client-logo-item">
+                    <a href="#" class="client-logo-item">
                         <picture>
                             <source type="image/webp" srcset="img/client_color.webp" >
                             <source type="image/png" srcset="img/client_color.png">
-                            <img src="img/client_color.png" class="clients-logo">
+                            <img src="img/client_color.png" class="clients-logo" alt="Клиент">
                         </picture>
                     </a>
-                    <a href="#"class="client-logo-item">
+                    <a href="#" class="client-logo-item">
                         <picture>
                             <source type="image/webp" srcset="img/client_color.webp" >
                             <source type="image/png" srcset="img/client_color.png">
-                            <img src="img/client_color.png" class="clients-logo">
+                            <img src="img/client_color.png" class="clients-logo" alt="Клиент">
                         </picture>
                     </a>
-                    <a href="#"class="client-logo-item">
+                    <a href="#" class="client-logo-item">
                         <picture>
                             <source type="image/webp" srcset="img/client_color.webp" >
                             <source type="image/png" srcset="img/client_color.png">
-                            <img src="img/client_color.png" class="clients-logo">
+                            <img src="img/client_color.png" class="clients-logo" alt="Клиент">
                         </picture>
                     </a>
-                    <a href="#"class="client-logo-item">
+                    <a href="#" class="client-logo-item">
                         <picture>
                             <source type="image/webp" srcset="img/client_color.webp" >
                             <source type="image/png" srcset="img/client_color.png">
-                            <img src="img/client_color.png" class="clients-logo">
+                            <img src="img/client_color.png" class="clients-logo" alt="Клиент">
                         </picture>
                     </a>
-                    <a href="#"class="client-logo-item">
+                    <a href="#" class="client-logo-item">
                         <picture>
                             <source type="image/webp" srcset="img/client_color.webp" >
                             <source type="image/png" srcset="img/client_color.png">
-                            <img src="img/client_color.png" class="clients-logo">
+                            <img src="img/client_color.png" class="clients-logo" alt="Клиент">
                         </picture>
                     </a>
                 </div>
@@ -453,7 +453,7 @@
             <picture>
                 <source type="image/webp" srcset="img/blog-card-1.webp" >
                 <source type="image/jpeg" srcset="img/blog-card-1.jpeg">
-                <img src="img/blog-card-1.jpeg" class="blog-card-image">
+                <img src="img/blog-card-1.jpeg" class="blog-card-image" alt="Блог">
             </picture>
             <h3 class="blog-card-title">Современная методология разработки одухотворила всех причастных</h3>
             <p class="blog-card-text">Действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию, в равной степени предоставлены...
@@ -463,7 +463,7 @@
             <picture>
                 <source type="image/webp" srcset="img/blog-card-2.webp" >
                 <source type="image/jpeg" srcset="img/blog-card-2.jpeg">
-                <img src="img/blog-card-2.jpeg" class="blog-card-image">
+                <img src="img/blog-card-2.jpeg" class="blog-card-image" alt="Блог">
             </picture>        
             <h3 class="blog-card-title">Сложно сказать, почему жизнь прекрасна</h3>
             <p class="blog-card-text">Сложно сказать, почему элементы политического процесса функционально разнесены на независимые элементы. Безусловно, высокотехнологичная...
@@ -472,7 +472,7 @@
             <picture>
                 <source type="image/webp" srcset="img/blog-card-1.webp" >
                 <source type="image/jpeg" srcset="img/blog-card-1.jpeg">
-                <img src="img/blog-card-1.jpeg" class="blog-card-image">
+                <img src="img/blog-card-1.jpeg" class="blog-card-image" alt="Блог">
             </picture>
             <h3 class="blog-card-title">Современная методология разработки одухотворила всех причастных</h3>
             <p class="blog-card-text">Действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию, в равной степени предоставлены...
