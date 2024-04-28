@@ -118,7 +118,7 @@
                     </div>
                     
                 </div>
-                <img src=<?php echo $page_title ?> alt="" class="img-area">
+                <img src=<?php echo $img_src ?> alt="" class="img-area">
             </div>
         </div>
     </header>   

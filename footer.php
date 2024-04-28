@@ -193,7 +193,7 @@
         </div>
     </div>  
     <div class="modal" id="alert-modal">
-        <div class="modal-dialog">
+        <div class="modal-dialog">         
             <img src="img/thanks_illu.png" alt="" class="alert-img">
             <h2 class="modal-title">Спасибо за заявку!</h2>
             <a href="#" class="modal-close" data-toggle="modal" data-target="#alert-modal">
