@@ -953,6 +953,71 @@ body {
 .second-header-state, .first-header-state .text-area-link-page:last-child {
     color: rgb(41, 45, 51);
 }
+.seo-title {
+    color: rgb(41, 45, 51);
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: 160%;
+    margin: 0;
+    margin-bottom: .625rem;
+}
+.seo-text {
+    color: rgb(130, 138, 153);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    margin: 0;
+    margin-bottom: 1.25rem
+}
+.seo-button {
+    display: flex;
+    gap: .9375rem;
+    align-items: center;
+}
+.seo-button-link {
+    color: rgb(92, 142, 230);
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    line-height: 160%;
+}
+.main-info {
+    display: flex;
+    align-items: center;
+    gap: 7.5rem;
+}
+.main-info-block {
+    max-width: 52.5rem;
+}
+.main-info-title {
+    max-width: 37.5rem;
+}
+.main-info-text {
+    color: rgb(130, 138, 153);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 160%;
+}
+.about-company-img {
+    max-width: 30rem;
+    max-height: 30rem;
+}
+.features-text-black-mod {
+    color: rgb(41, 45, 51);
+}
+.adventages-item {
+    width: 18rem;
+    height: auto !important;
+    padding: 1.5rem 3rem;
+    border: 1px solid rgb(235, 235, 240);
+}
+.arrow-color-light {
+    fill: #fff;
+}
+.arrow-color-black {
+    fill: black;
+}
+
 @media (max-width: 1700px) {
     html {
         font-size: 14px;
@@ -1172,6 +1237,10 @@ body {
         left: -28.125rem;
     }
     @media (max-width: 850px) {
+        .main-info {
+            flex-direction: column;
+            gap: 3.125rem;
+        }
         .second-header-state .img-area  {
             display: none;
         }

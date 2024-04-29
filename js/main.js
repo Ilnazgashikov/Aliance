@@ -79,13 +79,17 @@ const openMenu = (event) => {
     menu.classList.add("is-open");
     menuToggle.classList.add("close-menu");
     document.body.style.overflow = "hidden";
+    if (isFront) {
     lightMod();
+    }
 }
 const closeMenu = (event) => {
     menu.classList.remove("is-open");
     menuToggle.classList.remove("close-menu");
     document.body.style.overflow = "";
+    if (isFront) {
     blackMod();
+    }
 }
 window.addEventListener(`resize`, event => {
 	changeNavHeight("5.875rem")
