@@ -111,9 +111,7 @@
             </div>
 
         <?php 
-            $adventages_title = 'header-features-text';
-            $arrow_color = "arrow-color-light";
-            $adventages_item = 'swiper-slide header-features-item';
+            $light_mod_on = true; 
             include_once('template-parts/adventages.php'); 
         ?>
         </div>
@@ -150,12 +148,12 @@
                 </ol>
                 <div class="steps-button primary-buttons-wrapper">
                     <div class="steps-button-prev primary-button-prev">
-                        <svg width="36" height="24">
+                        <svg fill="white" width="36" height="24">
                             <use href="img/sprites.svg#arrow-prev"></use> 
                         </svg>
                     </div>
                     <div class="steps-button-next primary-button-next">
-                        <svg width="36" height="24">
+                        <svg fill="white" width="36" height="24">
                             <use href="img/sprites.svg#arrow-next"></use> 
                         </svg>
                     </div>
@@ -371,12 +369,12 @@
             <div class="button-link">Весь блог</div>
             <div class="blog-button primary-buttons-wrapper">
                 <div class="blog-button-prev primary-button-prev">
-                    <svg width="36" height="24">
+                    <svg fill="white" width="36" height="24">
                         <use href="img/sprites.svg#arrow-prev"></use> 
                     </svg>
                 </div>
                 <div class="blog-button-next primary-button-next">
-                    <svg width="36" height="24">
+                    <svg fill="white" width="36" height="24">
                         <use href="img/sprites.svg#arrow-next"></use> 
                     </svg>
                 </div>
