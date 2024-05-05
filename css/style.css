@@ -1061,14 +1061,17 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+.research-center-column-text {
+    display: flex;
+    gap: 6.25rem;
+    margin-bottom: 3.125rem;
+}
 .research-center-text {
     color: rgb(130, 138, 153);
     font-size: 1rem;
     font-weight: 400;
     line-height: 160%;
-    columns: 2 39.6875rem;
-    column-gap: 5rem;
-    margin-bottom: 3.125rem;
+    max-width: 39.6875rem;
 }
 .img-card {
     width: 44.0625rem;
@@ -1076,6 +1079,15 @@ body {
 }
 .img-button {
     margin-top: 1.875rem;
+}
+.politica-conf-text {
+    color: rgb(41, 45, 51);
+    font-family: Noto Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;  
+    margin-top: 6.25rem;
+    margin-bottom: 9.375rem;
 }
 @media (max-width: 1700px) {
     html {
@@ -1303,6 +1315,10 @@ body {
         left: -28.125rem;
     }
     @media (max-width: 850px) {
+        .research-center-column-text {
+            flex-direction: column;
+            gap: 0px;
+        }
         .production-list {
             columns: 1;
         }

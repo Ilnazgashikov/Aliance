@@ -54,23 +54,14 @@ const swiper = new Swiper('.features-sliders', {
   });
   const swiperSteps = new Swiper('.img-slider', {
     speed: 400,
-    slidesPerView: 2,
+    slidesPerView: 1,
     spaceBetween: 30,
     navigation: {
       nextEl: '.img-button-next',
       prevEl: '.img-button-prev',
     },
     breakpoints: {
-      320: {
-        slidesPerView: 1,
-      },
-      576: {
-        slidesPerView: 1,
-      },
       850: {
-        slidesPerView: 2,
-      },
-      1060: {
         slidesPerView: 2,
       },
     }
