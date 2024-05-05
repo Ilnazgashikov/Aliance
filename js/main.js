@@ -28,8 +28,30 @@ const swiper = new Swiper('.features-sliders', {
           },
     }
   });
-
-  const swiperImg = new Swiper('.features-sliders', {
+  const swiperSteps = new Swiper (".steps-slider", {
+    speed:400,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: ".steps-button-next",
+      prevEl: ".steps-button-prev",
+    },
+    breakpoints: {
+      480: {
+        slidesPerView: 1,
+      },
+      576: {
+        slidesPerView: 2,
+      },
+      850: {
+        slidesPerView: 3,
+      },
+      1060: {
+        slidesPerView: 4,
+      },
+    }
+  })
+  const swiperFeatures = new Swiper('.features-sliders', {
     speed: 400,
     autoHeight: false,
     slidesPerView: 1,
@@ -52,7 +74,7 @@ const swiper = new Swiper('.features-sliders', {
           },
     }
   });
-  const swiperSteps = new Swiper('.img-slider', {
+  const swiperImg = new Swiper('.img-slider', {
     speed: 400,
     slidesPerView: 1,
     spaceBetween: 30,
