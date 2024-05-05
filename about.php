@@ -87,4 +87,11 @@ include_once('header-page.php'); ?>
             </div>
     </div>
 </section>
-<?php include_once('footer.php'); ?>
+<?php 
+    include_once('template-parts/founder.php'); 
+?>
+<?php include_once('template-parts/research.php'); ?>
+<?php 
+    include_once('template-parts/clients.php'); 
+?>
+<?php include_once('template-parts/footer.php'); ?>

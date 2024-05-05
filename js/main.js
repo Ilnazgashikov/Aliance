@@ -17,7 +17,7 @@ const swiper = new Swiper('.features-sliders', {
         576: {
           slidesPerView: 2,
         },
-        768: {
+        850: {
           slidesPerView: 3,
         },
         1024: {
@@ -29,26 +29,49 @@ const swiper = new Swiper('.features-sliders', {
     }
   });
 
-  const swiperSteps = new Swiper('.steps-slider', {
+  const swiperImg = new Swiper('.features-sliders', {
     speed: 400,
+    autoHeight: false,
     slidesPerView: 1,
-    spaceBetween: 30,
     navigation: {
-      nextEl: '.steps-button-next',
-      prevEl: '.steps-button-prev',
+        nextEl: '.slider-button-next',
+        prevEl: '.slider-button-prev',
     },
     breakpoints: {
-      480: {
+        576: {
+          slidesPerView: 2,
+        },
+        850: {
+          slidesPerView: 3,
+        },
+        1024: {
+          slidesPerView: 4,
+        },
+        1260: {
+            slidesPerView: 5,
+          },
+    }
+  });
+  const swiperSteps = new Swiper('.img-slider', {
+    speed: 400,
+    slidesPerView: 2,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: '.img-button-next',
+      prevEl: '.img-button-prev',
+    },
+    breakpoints: {
+      320: {
         slidesPerView: 1,
       },
       576: {
-        slidesPerView: 2,
+        slidesPerView: 1,
       },
       850: {
-        slidesPerView: 3,
+        slidesPerView: 2,
       },
       1060: {
-        slidesPerView: 4,
+        slidesPerView: 2,
       },
     }
 });

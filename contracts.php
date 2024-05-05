@@ -21,4 +21,4 @@ include_once('template-parts/contracts-cart.php'); ?>
         </div>
     </div>
 </section>
-<?php include_once('footer.php'); ?>
+<?php include_once('template-parts/footer.php'); ?>
