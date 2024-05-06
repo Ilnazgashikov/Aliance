@@ -21,4 +21,6 @@ include_once('template-parts/contracts-cart.php'); ?>
         </div>
     </div>
 </section>
-<?php include_once('template-parts/footer.php'); ?>
+<?php 
+    $cta_open = true;
+    include_once('template-parts/footer.php'); ?>

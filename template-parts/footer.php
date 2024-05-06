@@ -1,4 +1,6 @@
-<section class="cta">
+    <?php 
+    if ($cta_open) {
+        echo '<section class="cta">
         <div class="bg-grey section-cta">
             <img src="img/cta.png" alt="" class="cta-image">
             <div class="cta-from-wrapper container">
@@ -43,8 +45,13 @@
                 </form>
             </div>
         </div>
-    </section>
+    </section>';
+    }
+    ?>
     <footer class="footer">
+        <?php 
+            if (!$cta_open) echo '<hr class="footer-seporator">';
+        ?>
         <div class="container">
             <div class="footer-top">
                 <svg class="logo-image footer-logo" width="140" height="40">
@@ -84,7 +91,7 @@
                     <h2 class="footer-menu-title">Контрактное производство</h2>
                     <ul class="footer-menu-list footer-menu-column-2">
                         <li class="footer-menu-item">
-                            <a href="#" class="footer-menu-link">Автомобильная химия</a>
+                            <a href="./avtohim.php" class="footer-menu-link">Автомобильная химия</a>
                         </li>
                         <li class="footer-menu-item">
                             <a href="#" class="footer-menu-link">Бытовая химия</a>

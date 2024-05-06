@@ -19,7 +19,7 @@
             <li class="mobile-nav-item"><a href="contracts.php" class="mobile-nav-link">Контрактное производтсво</a>
                 <ul class="mobile-submenu">
                     <li class="mobile-submenu-item">
-                        <a class="mobile-submenu-link" href="#">Автомобильная химия</a>
+                        <a class="mobile-submenu-link" href="avtohim.php">Автомобильная химия</a>
                     </li>
                     <li class="mobile-submenu-item">
                         <a class="mobile-submenu-link" href="#">Бытовая химия</a>
@@ -111,14 +111,15 @@
                     <div class="text-area-link">
                         <span class="text-area-link-page">
                             Главная
-                        </span>                   
+                        </span>  
+                                         
                         <span class="text-area-link-page">
                         <?php echo $page_title ?>
                         </span>
                     </div>
                     
                 </div>
-                <img src=<?php echo $img_src ?> alt="" class="img-area">
+                <img src="<?php echo $img_src ?>" alt= "<?php echo $img_alt; ?>" class="img-area">
             </div>
         </div>
     </header>   

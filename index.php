@@ -18,7 +18,7 @@
             <li class="mobile-nav-item"><a href="contracts.php" class="mobile-nav-link">Контрактное производтсво</a>
                 <ul class="mobile-submenu">
                     <li class="mobile-submenu-item">
-                        <a class="mobile-submenu-link" href="#">Автомобильная химия</a>
+                        <a class="mobile-submenu-link" href="avtohim.php">Автомобильная химия</a>
                     </li>
                     <li class="mobile-submenu-item">
                         <a class="mobile-submenu-link" href="#">Бытовая химия</a>
@@ -236,4 +236,6 @@
     
         </div>
     </section>  
-    <?php include_once('template-parts/footer.php'); ?>
+    <?php 
+        $cta_open = true;
+        include_once('template-parts/footer.php'); ?>
