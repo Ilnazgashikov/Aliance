@@ -510,6 +510,7 @@ body {
     display: flex;
     position: relative;
     min-height: 25rem; 
+    max-width: 44.0625rem;
     flex-direction: column;
     text-decoration: none;
     color: #fff;
@@ -1175,13 +1176,86 @@ body {
     list-style: none;
     padding: 0;
 }
+.type-chemicals-list-item {
+    margin-bottom: 20px;
+}
 .type-chemicals-list-item-text {
     color: rgb(41, 45, 51);
+    display: flex;
+    align-items: center;
     font-family: Noto Sans;
     font-size: 1rem;
     font-weight: 400;
 }
+.type-chemicals-list-item-text::before {
+    content: "";
+    height: 2px;
+    display: inline-block;
+    width: 15px;
+    margin-right: .5625rem;
+    background:rgb(92, 142, 230);
+}
+.blog-button-link {
+    text-decoration: none;
+}
+.blog-card-page {
+    display: flex;
+    position: relative;
+    height: 25rem; 
+    max-width: 44.0625rem;
+    flex-direction: column;
+    text-decoration: none;
+    flex-grow: 1;
+    color: #fff;
+    justify-content: flex-end;
+    padding: 3.125rem;
+}
+.blog-card-page::before {
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(41, 45, 51, 0.6);
+    z-index: -1;
+}
+.blog-box {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: end;
+}
+.page-blog-card-text {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 160%;
+    margin: 0;
+}
+.page-number {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style: none;
+}
+.page-number-item {
+    display: block;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.page-number-item:hover {
+    border: 2px solid rgb(138, 174, 236);
+}
 @media (max-width: 1700px) {
+    .blog-card-page {
+        width: 43rem;
+    }
     .avtohim-about-block {
         gap: 4.5rem;
     }
@@ -1218,6 +1292,9 @@ body {
 
 }
 @media (max-width: 1260px) {
+    .blog-card-page {
+        width: 33rem;
+    }
     .production-avtohim-content {
         max-width: 39rem;
     }
@@ -1273,6 +1350,13 @@ body {
     }
 }
 @media (max-width: 1060px) {
+        .blog-card-page {
+            width: 31rem;
+            height: 22rem;
+        }
+        .page-blog-card-text {
+            display: none;
+        }
         .avtohim-about-img {
             width: 26.25rem;
             height: 35.875rem;
@@ -1433,6 +1517,9 @@ body {
         .production-avtohim-list {
             margin-top: 1.875rem;
             margin-bottom: 3.125rem;
+        }
+        .blog-card-page {
+            width: 100%;
         }
         .production-avtohim-image {
             position: relative;

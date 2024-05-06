@@ -113,69 +113,78 @@ include_once('header-page.php'); ?>
         <h2 class="section-title">Виды автохимии</h2>
         <p class="type-chemicals-text">Но современная методология разработки позволяет оценить значение прогресса профессионального сообщества. Есть над чем задуматься: тщательные исследования конкурентов набирают популярность среди определенных слоев населения, а значит, должны быть ассоциативно распределены по отраслям.</p>
         <ul class="type-chemicals-list">
-            <li class="type-chemicals-list">
+            <li class="type-chemicals-list-item">
                 <span class="type-chemicals-list-item-text">Антискотч</span>
             </li>
-            <li class="type-chemicals-list">    
+            <li class="type-chemicals-list-item">    
                 <span class="type-chemicals-list-item-text">Многоцелевая смазка</span>
             </li>
-            <li class="type-chemicals-list">    
+            <li class="type-chemicals-list-item">    
                 <span class="type-chemicals-list-item-text">Жидкий ключ</span>
             </li>
-            <li class="type-chemicals-list">    
+            <li class="type-chemicals-list-item">    
                 <span class="type-chemicals-list-item-text">Высокотемпературная смазка</span>
             </li>
-            <li class="type-chemicals-list">    
+            <li class="type-chemicals-list-item">    
                 <span class="type-chemicals-list-item-text">Универсальный очиститель деталей</span>
             </li>
-            <li class="type-chemicals-list">    
+            <li class="type-chemicals-list-item">    
                 <span class="type-chemicals-list-item-text">Силиконовая смазка</span>
             </li>
-            <li class="type-chemicals-list">    
+            <li class="type-chemicals-list-item">    
                 <span class="type-chemicals-list-item-text">Цепная смазка</span>
             </li>
-            <li class="type-chemicals-list">    
+            <li class="type-chemicals-list-item">    
                 <span class="type-chemicals-list-item-text">Медная смазка</span>
             </li>
-            <li class="type-chemicals-list">    
+            <li class="type-chemicals-list-item">    
                 <span class="type-chemicals-list-item-text">Графитовая смазка</span>
             </li>
-            <li class="type-chemicals-list">    
+            <li class="type-chemicals-list-item">    
                 <span class="type-chemicals-list-item-text">Очиститель кондиционера пенный</span>
             </li>
-            <li class="type-chemicals-list">    
+            <li class="type-chemicals-list-item">    
                 <span class="type-chemicals-list-item-text">Очиститель битумных пятен</span>
             </li>
-            <li class="type-chemicals-list">    
+            <li class="type-chemicals-list-item">    
                 <span class="type-chemicals-list-item-text">Очиститель кондционера</span>
             </li>
-            <li class="type-chemicals-list">    
+            <li class="type-chemicals-list-item">    
                 <span class="type-chemicals-list-item-text">Очиститель дросельной заслонки</span>
             </li>
-            <li class="type-chemicals-list">    
+            <li class="type-chemicals-list-item">    
                 <span class="type-chemicals-list-item-text">Очиститель обивки </span>
             </li>
-            <li class="type-chemicals-list">    
+            <li class="type-chemicals-list-item">    
                 <span class="type-chemicals-list-item-text">Тефлоновая смазка</span>
             </li>
-            <li class="type-chemicals-list">    
+            <li class="type-chemicals-list-item">    
                 <span class="type-chemicals-list-item-text">Очиститель двигателя</span>
             </li>
-            <li class="type-chemicals-list">    
+            <li class="type-chemicals-list-item">    
                 <span class="type-chemicals-list-item-text">Универсальный очиститель</span>
             </li>
-            <li class="type-chemicals-list">    
+            <li class="type-chemicals-list-item">    
                 <span class="type-chemicals-list-item-text">Чернитель шин </span>
             </li>
-            <li class="type-chemicals-list">    
+            <li class="type-chemicals-list-item">    
                 <span class="type-chemicals-list-item-text">Чернитель шин + очистка</span>
             </li>
-            <li class="type-chemicals-list">    
+            <li class="type-chemicals-list-item">    
                 <span class="type-chemicals-list-item-text">Очиститель тормозных дисков</span>
             </li>
         </ul>
     </div>
 </section>
+<?php 
+    include_once("template-parts/research.php");
+?>
+<?php   
+    include_once('template-parts/scheme-works.php'); 
+?>
+<?php   
+    include_once('template-parts/clients.php'); 
+?>
 <?php 
     $cta_open = true;
     include_once('template-parts/footer.php'); ?>
