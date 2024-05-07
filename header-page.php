@@ -119,7 +119,7 @@
                     </div>
                     
                 </div>
-                <img src="<?php echo $img_src ?>" alt= "<?php echo $img_alt; ?>" class="img-area">
+                <img src="<?php echo $img_src ?>" class="img-area">
             </div>
         </div>
     </header>   

@@ -1,10 +1,9 @@
-
 <?php 
 $page_title = "Автомобильная химия";
 $header_style = "second-header-state";
 $img_src = "img/second-header-state.png";
-$img_alt = "Автомобильная химия";
 include_once('header-page.php'); ?>
+
 <section class="section avtohim-about">
     <div class="container">
         <div class="avtohim-about-block">

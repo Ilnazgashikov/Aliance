@@ -197,6 +197,6 @@
     
         </div>
     </section>  
-    <?php 
+   <?php 
         $cta_open = true;
-        include_once('template-parts/footer.php'); ?>
+        include_once('template-parts/footer.php'); ?> 
