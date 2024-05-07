@@ -1653,6 +1653,10 @@ body {
         }
     }
     @media (max-width: 576px) {
+        .trademark-card {
+            grid-column-gap: 2.125rem;
+            padding: 2.125rem;
+        }
         .text-area-title {
             font-size: 4.5rem;
         }
