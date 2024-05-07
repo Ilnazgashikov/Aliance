@@ -32,7 +32,7 @@
                     <a href="#" class="card">
                         <div class="card-content">
                             <h3 class="card-title">Дезинфицирующие средства</h3>
-                            <p class="card-text">Безусловно, сплочённость команды профессионалов позволяет оценить значение форм воздействия.</p>
+                            <p class="card-text">Лишь интерактивные прототипы призваны к ответу.</p>
                             <picture>
                                 <source type="image/webp" srcset="img/dezinfect.webp" >
                                 <source type="image/png" srcset="img/dezinfect.png">
