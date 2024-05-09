@@ -57,12 +57,20 @@
         </div>
 
         <div class="social-network-link">
-            <svg class="header-phone-icon" width="24" height="24">
-                <use href="img/sprites.svg#vk"></use>
-            </svg>
-            <svg class="header-phone-icon" width="24" height="24">
-                <use href="img/sprites.svg#inst"></use>
-            </svg>
+            <a href="https://www.vk.com/">
+                <span>
+                    <svg class="header-phone-icon" width="24" height="24">
+                        <use href="img/sprites.svg#vk"></use>
+                    </svg>
+                </span>
+            </a>
+            <a href="https://instagram.com/">
+                <span>
+                    <svg class="header-phone-icon" width="24" height="24">
+                        <use href="img/sprites.svg#inst"></use>
+                    </svg>
+                </span>
+            </a>
         </div>
     </div>
     <nav class="nav-bar">
@@ -107,7 +115,9 @@
                     Комплексное обеспечение товарами и расходными материалами бизнеса
                 </h1>
                 <p class="header-text">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от анализа существующих паттернов поведения</p>
-                <button class="button content-button" data-toggle="modal">Подробнее о компании</button>
+                <a href="about.php">
+                    <button class="button content-button">Подробнее о компании</button>
+                </a>
             </div>
 
         <?php 
@@ -119,14 +129,108 @@
     <?php   
         include_once('template-parts/scheme-works.php'); 
     ?>
-    <?php 
-    $block_title = "Контрактное производство";
-        include_once('template-parts/contracts-cart.php'); 
-    ?>
-    <?php 
-    $block_title = "Собственные марки";
-        include_once('template-parts/trademarks-section.php'); 
-    ?>
+    <section class="section production">
+            <div class="container">
+                <div class="separator"></div>
+                <h2 class="section-title">Контрактное производство</h2>
+                <div class="cards">
+                    <a href="contracts.php" class="card">
+                        <div class="card-content">
+                            <h3 class="card-title">Автомобильная химия</h3>
+                            <p class="card-text">Безусловно, сплочённость команды профессионалов позволяет оценить значение форм воздействия.</p>
+                            <picture>
+                                <source type="image/webp" srcset="img/avto-him.webp" >
+                                <source type="image/png" srcset="img/avto-him.png">
+                                <img src="img/avto-him.png" class="card-image" alt="Автомобильная химия">
+                            </picture>
+                        </div>
+                    </a>
+                    <a href="contracts.php" class="card">
+                        <div class="card-content">
+                            <h3 class="card-title">Бытовая химия</h3>
+                            <p class="card-text">А также стремящиеся вытеснить традиционное производство, нанотехнологии функционально разнесены на независимые элементы.</p>
+                            <picture>
+                                <source type="image/webp" srcset="img/bit-him.webp" >
+                                <source type="image/png" srcset="img/bit-him.png">
+                                <img src="img/bit-him.png" class="card-image" alt="Бытовая химия">
+                            </picture>
+                        </div>
+                    </a>
+                    <a href="contracts.php" class="card">
+                        <div class="card-content">
+                            <h3 class="card-title">Дезинфицирующие средства</h3>
+                            <p class="card-text">Лишь интерактивные прототипы призваны к ответу.</p>
+                            <picture>
+                                <source type="image/webp" srcset="img/dezinfect.webp" >
+                                <source type="image/png" srcset="img/dezinfect.png">
+                                <img src="img/dezinfect.png" class="card-image" alt="Дезинфекция">
+                            </picture>    
+                        </div>
+                    </a>
+                    <a href="contracts.php" class="card">
+                        <div class="card-content">
+                            <h3 class="card-title">Пищевые аэрозоли</h3>
+                            <p class="card-text">Безусловно, сплочённость команды профессионалов позволяет оценить значение форм воздействия.</p>
+                            <picture>
+                                <source type="image/webp" srcset="img/dezinfect.webp" >
+                                <source type="image/png" srcset="img/dezinfect.png">
+                                <img src="img/dezinfect.png" class="card-image" alt="Дезинфекция">
+                            </picture>    
+                        </div>
+                    </a>
+                    <a href="contracts.php" class="card">
+                        <div class="card-content">
+                            <h3 class="card-title">Косметическая продукция</h3>
+                            <p class="card-text">Лишь интерактивные прототипы призваны к ответу.</p>
+                            <picture>
+                                <source type="image/webp" srcset="img/avto-him.webp" >
+                                <source type="image/png" srcset="img/avto-him.png">
+                                <img src="img/avto-him.png" class="card-image" alt="Автомобильная химия">
+                            </picture>
+                        </div>
+                    </a>
+                    <a href="contracts.php" class="card">
+                        <div class="card-content">
+                            <h3 class="card-title">Краски аэрозольные</h3>
+                            <p class="card-text">А также стремящиеся вытеснить традиционное производство, нанотехнологии функционально разнесены на независимые элементы.</p>
+                            <picture>
+                                <source type="image/webp" srcset="img/bit-him.webp" >
+                                <source type="image/png" srcset="img/bit-him.png">
+                                <img src="img/bit-him.png" class="card-image" alt="Бытовая химия">
+                            </picture>
+                        </div>
+                    </a>
+                </div>
+
+        </div>
+    </section>
+    <section class="section trademark">
+            <div class="container">
+                <div class="separator"></div>
+                <h2 class="section-title">Собственные торговые марки</h2>
+                <div class="trademark-cards">
+                    <a href="trademarks-page.php" class="trademark-card-link">
+                        <div class="trademark-card">
+                            <svg class="trademark-card-logo">
+                                <use href="img/sprites.svg#ag-tech"></use> 
+                            </svg>
+                            <h3 class="trademark-card-title">Автохимия AG-Tech</h3>
+                            <p class="trademark-card-text">Для современного мира разбавленное изрядной долей эмпатии, рациональное мышление создаёт предпосылки для поставленных обществом задач.</p>
+                        </div>
+                    </a>
+                    <a href="trademarks-page.php" class="trademark-card-link">
+                        <div class="trademark-card">
+                            <svg class="trademark-card-logo">
+                                <use href="img/sprites.svg#aliance_production"></use> 
+                            </svg>
+                            <h3 class="trademark-card-title">Автохимия AP</h3>
+                            <p class="trademark-card-text">Для современного мира разбавленное изрядной долей эмпатии, рациональное мышление создаёт предпосылки для поставленных обществом задач.</p>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+    </section>
     <?php 
         include_once('template-parts/founder.php'); 
     ?>

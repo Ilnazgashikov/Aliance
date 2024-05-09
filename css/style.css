@@ -784,7 +784,6 @@ body {
 .footer-menu-wrapper .footer-menu-link:hover {
     color: rgb(68, 73, 82);
     font-weight: 600;
-
 }
 .button-alert-modal {
     width: 100%;
@@ -1252,6 +1251,15 @@ body {
 .page-number-item:hover {
     border: 2px solid rgb(138, 174, 236);
 }
+.founder-title{
+    max-width: 30rem;
+}
+.research-title {
+    max-width: 37.5rem;
+}
+.trademark-card-link {
+    text-decoration: none;
+}
 @media (max-width: 1700px) {
     .blog-card-page {
         width: 43rem;
@@ -1512,7 +1520,45 @@ body {
             left: -28.125rem;
         }
     }
-    
+    @media (max-width: 991px) {
+        .button:hover {
+            background-color: rgb(92, 142, 230);
+        }
+        .trademark-card:hover .trademark-card-logo {
+            fill: rgb(130, 138, 153);
+        }
+        .trademark-card:hover .trademark-card-title {
+            color: rgb(41, 45, 51);
+        }
+        .trademark-card:hover {
+            border-color: rgb(235, 235, 240);
+        }
+        .card:hover .card-title {
+            color: rgb(41, 45, 51);
+        }
+        .card:hover {
+            border-color: rgb(235, 235, 240);
+        }
+        .button-link:hover:before {
+            width: 2.5rem;
+        }
+        .primary-button-next:hover {
+            background-color: #5c8ee6;
+        }
+        .primary-button-prev:hover {
+            background-color: #5c8ee6;
+        }
+        .footer-menu-wrapper .footer-menu-link:hover {
+            color: rgb(130, 138, 153);
+            font-weight: 400;
+        }
+        .client-logo-item:hover {
+            border-color: #ebebf0;
+        }
+        .client-logo-item:hover img{
+            filter: grayscale(100%);
+        }
+    }
     @media (max-width: 850px) {
         .production-avtohim-list {
             margin-top: 1.875rem;
@@ -1653,6 +1699,12 @@ body {
         }
     }
     @media (max-width: 576px) {
+        .second-research-text {
+            display: none;
+        }
+        .clients-title {
+            width: 90%;
+        }
         .trademark-card {
             grid-column-gap: 2.125rem;
             padding: 2.125rem;

@@ -3,7 +3,7 @@
             <div class="clients-wrapper">
                 <div class="clients-content">
                     <div class="separator"></div>
-                    <h2 class="section-title">Производим аэрозольную продукцию для разных сфер</h2>
+                    <h2 class="section-title clients-title">Производим аэрозольную продукцию для разных сфер</h2>
                     <ul class="clients-list">
                         <li class="clients-list-item">                 
                             <svg width="30" height="30" class="client-icon">

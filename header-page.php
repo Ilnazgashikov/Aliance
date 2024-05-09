@@ -58,12 +58,20 @@
         </div>
 
         <div class="social-network-link">
-            <svg class="header-phone-icon" width="24" height="24">
-                <use href="img/sprites.svg#vk"></use>
-            </svg>
-            <svg class="header-phone-icon" width="24" height="24">
-                <use href="img/sprites.svg#inst"></use>
-            </svg>
+        <a href="https://www.vk.com/">
+                <span>
+                    <svg class="header-phone-icon" width="24" height="24">
+                        <use href="img/sprites.svg#vk"></use>
+                    </svg>
+                </span>
+            </a>
+            <a href="https://instagram.com/">
+                <span>
+                    <svg class="header-phone-icon" width="24" height="24">
+                        <use href="img/sprites.svg#inst"></use>
+                    </svg>
+                </span>
+            </a>
         </div>
     </div>
     <nav class="nav-bar nav-bar-light">
